@@ -15,6 +15,12 @@
     ctrl.display=function(){
       console.log(ctrl.scores);
     };
+    
+    ctrl.review = {};
+    ctrl.addReview = function(product) {
+      review.push();
+      //slide 94
+    };
   }]);
 })();
 

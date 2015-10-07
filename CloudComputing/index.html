@@ -7,8 +7,24 @@
     </head>
     <body ng-controller="ScoreController as score">
       <div ng-repeat="sc in score.scores">
-          <h1>Score</h1>
-          <p ng-repeat="id in sc">{{id}}</p>
+          <p ng-repeat="id in sc">  {{id}} </p>
       </div>
+      
+      <p>Ajout de score nigger</p>
+      
+      <form name="addScoreForm" ng-controller="ScoreController as reviewCtrl" ng-submit="reviewCtrl.addReview(product)">
+        <blockquote>
+          <b>Nom: {{reviewCtrl.review.name}}<br></b>
+          <b>Id: {{reviewCtrl.review.id}}<br></b>
+          <b>Score: {{reviewCtrl.review.score}}<br></b>
+        </blockquote>
+        Nom:
+        <input type="text" ng-model="reviewCtrl.review.name"/><br>
+        Id:
+        <input type="text" ng-model="reviewCtrl.review.id"/><br>
+        Score:
+        <input type="text" ng-model="reviewCtrl.review.score"/><br>
+        <input type="submit" value="submit" />
+      </form>
     </body>
   </html>
