@@ -1,0 +1,3 @@
+# Module angularjstuto
+# RPC service class, partial path of RPC policy file
+angularjs.client.GreetingService, 924908C3CDBF5DA72E5256FCB72066DA.gwt.rpc

@@ -1,0 +1,2 @@
+serviceClass: angularjs.client.GreetingService
+path: 924908C3CDBF5DA72E5256FCB72066DA.gwt.rpc
