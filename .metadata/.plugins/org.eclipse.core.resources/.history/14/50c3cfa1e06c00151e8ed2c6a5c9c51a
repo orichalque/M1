@@ -1,0 +1,14 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+<title>AngularJS tuto</title></head>
+<body ng-controller="storeControler">
+Salut
+<script type="text/javascript" src="../angular-1.4.7/angular.min.js">
+	function StoreController() {
+		alert('Salut PD!');
+	}
+</script>
+</body>
+</script>
+</html>

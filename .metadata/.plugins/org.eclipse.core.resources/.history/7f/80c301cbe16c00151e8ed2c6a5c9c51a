@@ -1,0 +1,26 @@
+<html ng-app="store">
+	<head>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+		<title>AngularJS tuto</title>
+	</head>
+	<body ng-controller="storeControler">
+		<script type="text/javascript" src="../angular-1.4.7/angular.min.js"></script>
+		<script type="text/javascript" src="app.js">
+			
+			(function() {
+				var app = angular.module('store', []);
+				
+				app.controller('StoreController', function() {
+					this.product = gem;
+				});
+				
+				var gem = {
+					name: 'Dodecahedron',
+					price: 2.95,
+					description: '. . .',
+				}
+			})();
+		</script>
+	</body>
+	</script>
+</html>

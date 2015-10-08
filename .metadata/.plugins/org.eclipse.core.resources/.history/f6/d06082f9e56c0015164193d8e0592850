@@ -1,0 +1,16 @@
+<html ng-app="store">
+	<head>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+		<title>AngularJS tuto</title>
+	</head>
+	<body ng-controller="StoreController as store">
+		<div>
+			<h1> {{store.product.name}} </h1>
+			<h2> ${{store.pruduct.price}}</h2>
+			<p> product description </p>
+		</div>
+		<script type="text/javascript" src="../angular-1.4.7/angular.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+	</script>
+</html>

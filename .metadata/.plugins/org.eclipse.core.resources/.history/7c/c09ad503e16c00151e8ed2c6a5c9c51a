@@ -1,0 +1,12 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+<title>AngularJS tuto</title></head>
+<body ng-controller="storeControler">
+Salut
+<script type="text/javascript" src="../angular-1.4.7/angular.min.js">
+	var app = angular.module('store', []);
+</script>
+</body>
+</script>
+</html>

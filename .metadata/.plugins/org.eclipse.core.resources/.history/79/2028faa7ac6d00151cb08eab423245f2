@@ -1,0 +1,56 @@
+@prefix ns0: <http://njh.me/> .
+
+<http://njh.me/propertyArtist> ns0:type ns0:Class .
+ns0:propertyArtifact ns0:type ns0:Class .
+ns0:propertyPainting
+  ns0:subClassOf ns0:Artifact ;
+  ns0:type ns0:Class .
+
+ns0:propertySculpture
+  ns0:subClassOf ns0:propertyArtifact ;
+  ns0:type ns0:Class .
+
+ns0:propertySculptor ns0:subClassOf ns0:propertyArtist .
+ns0:propertyPainter ns0:subClassOf ns0:propertyArtist .
+ns0:propertyCubist ns0:subClassOf ns0:propertyPainter .
+ns0:propertyFlemish ns0:subClassOf ns0:propertyPainter .
+ns0:propertyfirst_name
+  ns0:type ns0:Property ;
+  ns0:domain ns0:propertyArtist ;
+  ns0:range ns0:Literal .
+
+ns0:propertylast_name
+  ns0:type ns0:Property ;
+  ns0:domain ns0:propertyArtist ;
+  ns0:range ns0:Literal .
+
+ns0:propertycreates
+  ns0:type ns0:Property ;
+  ns0:domain ns0:propertyArtist ;
+  ns0:range ns0:propertyArtifact .
+
+ns0:propertytechnique
+  ns0:type ns0:Property ;
+  ns0:domain ns0:propertyArtifact ;
+  ns0:range ns0:Literal .
+
+ns0:propertysculpt
+  ns0:type ns0:subPropertyOf ;
+  ns0:domain ns0:propertySculptor ;
+  ns0:range ns0:propertySculpture .
+
+ns0:propertypaints
+  ns0:type ns0:subPropertyOf ;
+  ns0:domain ns0:propertyPainter ;
+  ns0:range ns0:propertyPainting .
+
+ns0:propertyr1
+  ns0:type ns0:propertyFlemish ;
+  ns0:propertyfirst_name "Rembrandt" ;
+  ns0:propertylast_name "Smith" ;
+  ns0:propertypaints ns0:propertyr2 .
+
+ns0:propertyr2
+  ns0:propertytechnique "oil on canvas" ;
+  ns0:propertyfile_size "17" ;
+  ns0:propertytitle "Abraham and Isaac" .

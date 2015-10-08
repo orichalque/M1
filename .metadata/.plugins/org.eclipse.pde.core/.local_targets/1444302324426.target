@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="Running Platform" sequenceNumber="4">
+<locations>
+<location configuration="/comptes/E104607D/.eclipse/org.eclipse.platform_4.4.1_1685004828_linux_gtk_x86_64/configuration/" path="${eclipse_home}" type="Profile"/>
+</locations>
+<environment>
+<os>linux</os>
+<ws>gtk</ws>
+<arch>x86_64</arch>
+<nl>fr_FR</nl>
+</environment>
+<launcherArgs>
+<vmArgs>-Dnetwork.proxy_host=proxy.ensinfo.sciences.univ-nantes.prive -Dnetwork.proxy_port=3128 -Dosgi.requiredJavaVersion=1.6 -Xms40m -Xmx512m -XX:MaxPermSize=256m</vmArgs>
+</launcherArgs>
+</target>
