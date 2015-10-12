@@ -18,19 +18,15 @@ import org.apache.jena.vocabulary.VCARD;
 	 */
 	public class Sparql_Reader {
 	    
-		static void exo1() {
+		static void exo1() throws FileNotFoundException {
 			Model m = ModelFactory.createDefaultModel();
 			m.read("peinture.rdfs");
+			String request = new Scanner(new File("/comptes/E104607D/Desktop/M1/Web Semantique/TP3/request1.rq")).useDelimiter("\\Z").next();
+			UpdateAction.parseExecute(request, m);
 			m.write(System.out, "TURTLE");
+			
 		}
 		
-	    static void tuto7() {
-	    	Model m2 = ModelFactory.createDefaultModel();
-	    	m2.read( "tuto7.txt");
-	    	//m2.removeNsPrefix("cat");
-	    	m2.write( System.out, "TURTLE");
-	    }
-	    
 	    //UPDATE DU GRAPHE
 	    static void updateGraphe() throws FileNotFoundException {
 	    	Model m = ModelFactory.createDefaultModel();

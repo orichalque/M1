@@ -1,0 +1,10 @@
+prefix : <http://default.t>
+prefix xsd:<https://default_xsd.t>
+prefix rdf:<http://default_rdf.t>
+prefix rdfs:<http://default_rdfs.t>
+
+
+SELECT ?a
+WHERE {
+?a rdf:type :Flemish
+}

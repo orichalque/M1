@@ -1,0 +1,11 @@
+prefix : <http://default.t>
+prefix xsd:<https://default_xsd.t>
+prefix rdf:<http://default_rdf.t>
+prefix rdfs:<http://default_rdfs.t>
+
+SELECT ?b
+WHERE {
+	?b rdf:type :Painter.
+}
+
+

@@ -1,7 +1,7 @@
-@prefix : <property>
-@prefix xsd:<>
-@prefix rdf:<>
-@prefix rdfs:<>
+@prefix : <http://default.t>.
+@prefix xsd:<https://default_xsd.t>.
+@prefix rdf:<http://default_rdf.t>.
+@prefix rdfs:<http://default_rdfs.t>.
 
 
 :Artist rdfs:type rdfs:Class .
@@ -23,35 +23,35 @@
 :Flemish rdfs:subClassOf :Painter.
 
 :first_name rdf:type rdf:Property;
-	rdfs:domain :Artist
-	rdfs:range xsd:Literal
+	rdfs:domain :Artist;
+	rdfs:range xsd:Literal.
 
 :last_name rdf:type rdf:Property;
-	rdfs:domain :Artist
-	rdfs:range xsd:Literal
+	rdfs:domain :Artist;
+	rdfs:range xsd:Literal.
 
 :creates rdf:type rdf:Property;
-	rdfs:domain :Artist
-	rdfs:range :Artifact
+	rdfs:domain :Artist;
+	rdfs:range :Artifact.
 	
 :technique rdf:type rdf:Property;
-	rdfs:domain :Artifact
-	rdfs:range xsd:Literal
+	rdfs:domain :Artifact;
+	rdfs:range xsd:Literal.
 	
 :sculpt rdf:type rdfs:subPropertyOf;
-	rdfs:domain :Sculptor
-	rdfs:range :Sculpture
+	rdfs:domain :Sculptor;
+	rdfs:range :Sculpture.
 
 :paints rdf:type rdf:subPropertyOf;
-	rdfs:domain :Painter
-	rdfs:range :Painting
+	rdfs:domain :Painter;
+	rdfs:range :Painting.
 	
-&r1 rdf:type :Flemish;
+:r1 rdf:type :Flemish;
 	:first_name "Rembrandt";
 	:last_name "Smith";
-	:paints &r2.
+	:paints :r2.
 
-&r2 :technique "oil on canvas";
+:r2 :technique "oil on canvas";
 	:file_size "17";
 	:title "Abraham and Isaac".
 	
