@@ -38,11 +38,11 @@
 	rdfs:domain :Artifact;
 	rdfs:range xsd:Literal.
 	
-:sculpt rdf:type rdfs:subPropertyOf;
+:sculpt rdfs:subPropertyOf :creates;
 	rdfs:domain :Sculptor;
 	rdfs:range :Sculpture.
 
-:paints rdf:type rdf:subPropertyOf;
+:paints rdfs:subPropertyOf :creates;
 	rdfs:domain :Painter;
 	rdfs:range :Painting.
 	

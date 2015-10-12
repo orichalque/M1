@@ -22,4 +22,5 @@
 <fullyQualifiedTypeName name="com.sun.media.jfxmedia.logging.Logger"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
+<fullyQualifiedTypeName name="org.apache.jena.sparql.core.DatasetImpl"/>
 </qualifiedTypeNameHistroy>

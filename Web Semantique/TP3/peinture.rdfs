@@ -63,13 +63,13 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://default.tsculpt">
-    <ns1:ttype rdf:resource="http://default_rdfs.tsubPropertyOf"/>
+    <ns0:tsubPropertyOf rdf:resource="http://default.tcreates"/>
     <ns0:tdomain rdf:resource="http://default.tSculptor"/>
     <ns0:trange rdf:resource="http://default.tSculpture"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="http://default.tpaints">
-    <ns1:ttype rdf:resource="http://default_rdf.tsubPropertyOf"/>
+    <ns0:tsubPropertyOf rdf:resource="http://default.tcreates"/>
     <ns0:tdomain rdf:resource="http://default.tPainter"/>
     <ns0:trange rdf:resource="http://default.tPainting"/>
   </rdf:Description>

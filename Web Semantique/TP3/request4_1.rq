@@ -3,9 +3,11 @@ prefix xsd:<https://default_xsd.t>
 prefix rdf:<http://default_rdf.t>
 prefix rdfs:<http://default_rdfs.t>
 
-SELECT ?a ?b
+SELECT ?a ?b ?c
 WHERE {
-	?a rdf:type :Cubist.
+	?a rdf:type :Cubist;
+		:first_name ?b;
+		:last_name ?c.
 }
 
 

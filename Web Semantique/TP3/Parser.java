@@ -28,45 +28,76 @@ import org.apache.jena.util.FileManager;
 
 public class Parser {
 
-		private static Model model = ModelFactory.createDefaultModel();
+		private Model model;
 		private static Scanner input;
- 
-		public static void exo1() {		
+		private Dataset dataset;
+		
+		
+		public Parser() {
+			model = ModelFactory.createDefaultModel();
+			dataset = new DatasetImpl(model);
+			readingRDF("peinture.rdfs");
+			dataset.setDefaultModel(model);
+		}
+		
+		public void exo1() {		
 			doRequest("request1.rq");			 
 		}
 		
-		public static void exo2() {			
+		public void exo2() {			
 			doRequest("request2.rq"); 
 		}
 		
-		public static void exo3() {			
+		public void exo3() {			
 			doRequestUpdate("request3.rq");
+			
 		}
 		
-		public static void exo4() {
+		public void exo4() {
 			doRequest("request4_1.rq");
 			doRequest("request4_2.rq");
 		}
 		
-		public static void exo5() {
-			InfModel infModel = null;
-			infModel = ModelFactory.createRDFSModel(this.dataset.getNamedModel(uri));
-            dataset.replaceNamedModel(uri, infModel);
-            //AJOUTER LOADNAMEDGRAPH POUR AVOIR SON URI
+		public void exo5() {
+			dataset.setDefaultModel(readingInf());
+			System.out.println("Modele Inféré");
+			doRequestOnDataset("request4_1.rq");
+			doRequestOnDataset("request4_2.rq");	
 		}
 		
-
-		public static void readingRDF(String filename){
-
+		public Model readingInf(){
+			InfModel mod = ModelFactory.createRDFSModel(dataset.getDefaultModel());
+			System.out.println("Ecriture du modele inféré");
+			mod.write(System.out, "TURTLE");
+			return mod;
+		}
+		
+		public void readingRDF(String filename){
+			
 			// Open RDF file
 			InputStream in = FileManager.get().open(filename);
 			if (in == null) {
 			    throw new IllegalArgumentException("File not found");
 			}
 			// Load file content
-			model.read(in, null);
+			dataset.setDefaultModel(model.read(in, null));	
 			//model.write(System.out, "Turtle");
 		}
+		
+		public void doRequestOnDataset(String filename) {
+			String request = readQuery(filename);
+			System.out.println("\n-> Request on file: \"" + filename + "\"");
+			System.out.println(request);
+			System.out.println("-> Perform request...\n");
+			Query query = QueryFactory.create(request);
+			QueryExecution qexec = QueryExecutionFactory.create(query, this.dataset);
+			ResultSet results =  qexec.execSelect();
+			// Output query results	
+			ResultSetFormatter.out(System.out, results, query);
+			// Important - free up resources used running the query
+			qexec.close();
+		}
+		
 
 		public static String readQuery(String filename){
 			try {
@@ -79,7 +110,6 @@ public class Parser {
 	            while ((line = reader.readLine()) != null) {
 	                data.append(line + "\n");
 	            }
-
 	            inputStream.close();
 				return data.toString();
 	        }
@@ -88,18 +118,17 @@ public class Parser {
 	        }
 		}
 		
-		public static void doRequestUpdate(String filename) {
+		public void doRequestUpdate(String filename) {
 			String request = readQuery(filename);
 			System.out.println("\n-> Request on file: \"" + filename + "\"");
 			System.out.println(request);
 			System.out.println("-> Perform request...\n");
-			Dataset dataset = new DatasetImpl(model);
 			UpdateRequest query = UpdateFactory.create(request);
 			UpdateProcessor qexec = UpdateExecutionFactory.create(query, dataset);
 			qexec.execute();
 		}
-		
-		public static void doRequest(String filename) {
+		 
+		public void doRequest(String filename) {
 			String request = readQuery(filename);
 			System.out.println("\n-> Request on file: \"" + filename + "\"");
 			System.out.println(request);
@@ -114,11 +143,11 @@ public class Parser {
 		}
 		
 		public static void main(String[] args) {
-			readingRDF("peinture.rdfs");
-			exo1();
-			exo2();
-			exo3();
-			exo4();
+			Parser p = new Parser();
+			p.exo1();
+			p.exo2();
+			p.exo3();
+			p.exo4();
+			p.exo5();
 		}
 }
-
