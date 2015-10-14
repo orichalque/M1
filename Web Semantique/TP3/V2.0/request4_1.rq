@@ -1,9 +1,7 @@
-prefix : <http://default.t>
-prefix xsd:<https://default_xsd.t>
-prefix rdf:<http://default_rdf.t>
-prefix rdfs:<http://default_rdfs.t>
-
-SELECT ?a ?b ?c
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://example.org/>
+SELECT ?b ?c
 WHERE {
 	?a rdf:type :Cubist;
 		:first_name ?b;
