@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_9_mDgG59EeWJs8kE7CZP8Q" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_9_mDgW59EeWJs8kE7CZP8Q" bindingContexts="_9_ogKG59EeWJs8kE7CZP8Q">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Parser.java&quot; tooltip=&quot;TP3/Parser.java&quot;>&#xA;&lt;persistable path=&quot;/TP3/Parser.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Timer.java&quot; tooltip=&quot;TP2_Software_Testing/src/Timer.java&quot;>&#xA;&lt;persistable path=&quot;/TP2_Software_Testing/src/Timer.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase4.java&quot; tooltip=&quot;TP2_Software_Testing/src/TimerTestCase4.java&quot;>&#xA;&lt;persistable path=&quot;/TP2_Software_Testing/src/TimerTestCase4.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase.java&quot; tooltip=&quot;TP2_Software_Testing/src/TimerTestCase.java&quot;>&#xA;&lt;persistable path=&quot;/TP2_Software_Testing/src/TimerTestCase.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase3.java&quot; tooltip=&quot;TP2_Software_Testing/src/TimerTestCase3.java&quot;>&#xA;&lt;persistable path=&quot;/TP2_Software_Testing/src/TimerTestCase3.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase2.java&quot; tooltip=&quot;TP2_Software_Testing/src/TimerTestCase2.java&quot;>&#xA;&lt;persistable path=&quot;/TP2_Software_Testing/src/TimerTestCase2.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;tp1_1.java&quot; tooltip=&quot;/comptes/E104607D/Desktop/M1/Software Texting/tp1_1.java&quot;>&#xA;&lt;persistable uri=&quot;file:/comptes/E104607D/Desktop/M1/Software%20Texting/tp1_1.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerException.java&quot; tooltip=&quot;TP2_Software_Testing/src/TimerException.java&quot;>&#xA;&lt;persistable path=&quot;/TP2_Software_Testing/src/TimerException.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerException.java&quot; tooltip=&quot;/comptes/E104607D/Desktop/M1/Software Texting/timer-src/TimerException.java&quot;>&#xA;&lt;persistable uri=&quot;file:/comptes/E104607D/Desktop/M1/Software%20Texting/timer-src/TimerException.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Timer.java&quot; tooltip=&quot;/comptes/E104607D/Desktop/M1/Software Texting/timer-src/Timer.java&quot;>&#xA;&lt;persistable uri=&quot;file:/comptes/E104607D/Desktop/M1/Software%20Texting/timer-src/Timer.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Sparql_Reader.java&quot; tooltip=&quot;TP3/Sparql_Reader.java&quot;>&#xA;&lt;persistable path=&quot;/TP3/Sparql_Reader.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Sparql_Reader.java&quot; tooltip=&quot;/comptes/E104607D/Desktop/M1/Web Semantique/TP3/Sparql_Reader.java&quot;>&#xA;&lt;persistable uri=&quot;file:/comptes/E104607D/Desktop/M1/Web%20Semantique/TP3/Sparql_Reader.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;index.html&quot; tooltip=&quot;angularjsTuto/war/index.html&quot;>&#xA;&lt;persistable path=&quot;/angularjsTuto/war/index.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;web.xml&quot; tooltip=&quot;angularjsTuto/war/WEB-INF/web.xml&quot;>&#xA;&lt;persistable path=&quot;/angularjsTuto/war/WEB-INF/web.xml&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;appengine-web.xml&quot; tooltip=&quot;angularjsTuto/war/WEB-INF/appengine-web.xml&quot;>&#xA;&lt;persistable path=&quot;/angularjsTuto/war/WEB-INF/appengine-web.xml&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Timer.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/Timer.java&quot;>&#xA;&lt;persistable path=&quot;/TP3_Software_Testing/src/tp4/Timer.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase6.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/TimerTestCase6.java&quot;>&#xA;&lt;persistable path=&quot;/TP3_Software_Testing/src/tp4/TimerTestCase6.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase6Test.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/TimerTestCase6Test.java&quot;>&#xA;&lt;persistable path=&quot;/TP3_Software_Testing/src/tp4/TimerTestCase6Test.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase5.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/TimerTestCase5.java&quot;>&#xA;&lt;persistable path=&quot;/TP3_Software_Testing/src/tp4/TimerTestCase5.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase4.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/TimerTestCase4.java&quot;>&#xA;&lt;persistable path=&quot;/TP3_Software_Testing/src/tp4/TimerTestCase4.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase3.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/TimerTestCase3.java&quot;>&#xA;&lt;persistable path=&quot;/TP3_Software_Testing/src/tp4/TimerTestCase3.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase2.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/TimerTestCase2.java&quot;>&#xA;&lt;persistable path=&quot;/TP3_Software_Testing/src/tp4/TimerTestCase2.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/TimerTestCase.java&quot;>&#xA;&lt;persistable path=&quot;/TP3_Software_Testing/src/tp4/TimerTestCase.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerException.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/TimerException.java&quot;>&#xA;&lt;persistable path=&quot;/TP3_Software_Testing/src/tp4/TimerException.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Timer.java&quot; tooltip=&quot;TP3_Software_Testing/src/Timer.java&quot;>&#xA;&lt;persistable path=&quot;/TP3_Software_Testing/src/Timer.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase4.java&quot; tooltip=&quot;TP3_Software_Testing/src/TimerTestCase4.java&quot;>&#xA;&lt;persistable path=&quot;/TP3_Software_Testing/src/TimerTestCase4.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase2.java&quot; tooltip=&quot;TP3_Software_Testing/src/TimerTestCase2.java&quot;>&#xA;&lt;persistable path=&quot;/TP3_Software_Testing/src/TimerTestCase2.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;StubList.java&quot; tooltip=&quot;TP3_Software_Testing/src/StubList.java&quot;>&#xA;&lt;persistable path=&quot;/TP3_Software_Testing/src/StubList.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;StubCalendar.java&quot; tooltip=&quot;TP3_Software_Testing/src/StubCalendar.java&quot;>&#xA;&lt;persistable path=&quot;/TP3_Software_Testing/src/StubCalendar.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Parser.java&quot; tooltip=&quot;TP3/Parser.java&quot;>&#xA;&lt;persistable path=&quot;/TP3/Parser.java&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_9_mDgW59EeWJs8kE7CZP8Q" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_9_mDgm59EeWJs8kE7CZP8Q" label="%trimmedwindow.label.eclipseSDK" x="27" y="44" width="907" height="850">
@@ -76,47 +76,48 @@
           <tags>persp.newWizSC:org.eclipse.m2e.core.wizards.Maven2ProjectWizard</tags>
           <tags>persp.actionSet:org.eclipse.wst.ws.explorer.explorer</tags>
           <tags>persp.actionSet:com.mountainminds.eclemma.ui.CoverageActionSet</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_9_mDhW59EeWJs8kE7CZP8Q" selectedElement="_9_mDi259EeWJs8kE7CZP8Q" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_9_mDhW59EeWJs8kE7CZP8Q" selectedElement="_9_mDjG59EeWJs8kE7CZP8Q" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_9_mDhm59EeWJs8kE7CZP8Q" elementId="topLeft" containerData="2500" selectedElement="_9_mDh259EeWJs8kE7CZP8Q">
               <tags>newtablook</tags>
+              <tags>active</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_9_mDh259EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_9_mqx259EeWJs8kE7CZP8Q"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_9_mDiG59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.views.ResourceNavigator" toBeRendered="false" ref="_9_mq2259EeWJs8kE7CZP8Q"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_9_mDiW59EeWJs8kE7CZP8Q" elementId="org.eclipse.jdt.ui.TypeHierarchy" toBeRendered="false" ref="_9_mq3G59EeWJs8kE7CZP8Q"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_9_mDim59EeWJs8kE7CZP8Q" elementId="org.eclipse.jdt.ui.PackagesView" toBeRendered="false" ref="_9_mq3W59EeWJs8kE7CZP8Q"/>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_9_mDi259EeWJs8kE7CZP8Q" containerData="7500" selectedElement="_9_mDjG59EeWJs8kE7CZP8Q">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_9_mDjG59EeWJs8kE7CZP8Q" containerData="8938" selectedElement="_9_mDjW59EeWJs8kE7CZP8Q" horizontal="true">
-                <children xsi:type="basic:PartSashContainer" xmi:id="_9_mDjW59EeWJs8kE7CZP8Q" containerData="7000" selectedElement="_9_mDjm59EeWJs8kE7CZP8Q" horizontal="true">
-                  <children xsi:type="advanced:Placeholder" xmi:id="_9_mDjm59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.editorss" containerData="5000" ref="_9_mqwG59EeWJs8kE7CZP8Q"/>
-                  <children xsi:type="basic:PartStack" xmi:id="_9_mDj259EeWJs8kE7CZP8Q" elementId="PartStack@1ddc28fa" visible="false" containerData="5000" selectedElement="_9_mDkG59EeWJs8kE7CZP8Q">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_9_mDjG59EeWJs8kE7CZP8Q" containerData="7500" selectedElement="_9_mDjW59EeWJs8kE7CZP8Q" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_9_mDjW59EeWJs8kE7CZP8Q" containerData="7000" selectedElement="_7ocPkHQHEeWvgrYMhFj1HA" horizontal="true">
+                <children xsi:type="basic:PartSashContainer" xmi:id="_7ocPkHQHEeWvgrYMhFj1HA" containerData="5000" selectedElement="_9_mDjm59EeWJs8kE7CZP8Q">
+                  <children xsi:type="basic:PartStack" xmi:id="_9_mDlG59EeWJs8kE7CZP8Q" elementId="bottomRight" visible="false" containerData="5000" selectedElement="_WI2zcW6HEeWxashXSiZ7Og">
+                    <tags>newtablook</tags>
+                    <tags>org.eclipse.e4.secondaryDataStack</tags>
                     <tags>Minimized</tags>
-                    <children xsi:type="advanced:Placeholder" xmi:id="_9_mDkG59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.console.ConsoleView" ref="_9_mq6W59EeWJs8kE7CZP8Q"/>
+                    <children xsi:type="advanced:Placeholder" xmi:id="_9_mDlW59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.views.AllMarkersView" toBeRendered="false" ref="_9_mq3m59EeWJs8kE7CZP8Q"/>
+                    <children xsi:type="advanced:Placeholder" xmi:id="_9_mDlm59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.views.PropertySheet" ref="_9_mq4W59EeWJs8kE7CZP8Q"/>
+                    <children xsi:type="advanced:Placeholder" xmi:id="_9_mDl259EeWJs8kE7CZP8Q" elementId="org.eclipse.wst.server.ui.ServersView" toBeRendered="false" ref="_9_mq4m59EeWJs8kE7CZP8Q"/>
+                    <children xsi:type="advanced:Placeholder" xmi:id="_9_mDmG59EeWJs8kE7CZP8Q" elementId="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" ref="_9_mq4259EeWJs8kE7CZP8Q"/>
+                    <children xsi:type="advanced:Placeholder" xmi:id="_9_mDmW59EeWJs8kE7CZP8Q" elementId="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" toBeRendered="false" ref="_9_mq5G59EeWJs8kE7CZP8Q"/>
+                    <children xsi:type="advanced:Placeholder" xmi:id="_9_mDmm59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.views.ProblemView" toBeRendered="false" ref="_9_mq5259EeWJs8kE7CZP8Q"/>
+                    <children xsi:type="advanced:Placeholder" xmi:id="_9_mDm259EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.views.TaskList" toBeRendered="false" ref="_9_mq6G59EeWJs8kE7CZP8Q"/>
+                    <children xsi:type="advanced:Placeholder" xmi:id="_9_mDnG59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.views.BookmarkView" toBeRendered="false" ref="_9_mq_m59EeWJs8kE7CZP8Q"/>
+                    <children xsi:type="advanced:Placeholder" xmi:id="_9_mDnW59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.views.ProgressView" toBeRendered="false" ref="_9_mq_259EeWJs8kE7CZP8Q"/>
+                    <children xsi:type="advanced:Placeholder" xmi:id="_9_mDnm59EeWJs8kE7CZP8Q" elementId="org.eclipse.search.ui.views.SearchView" ref="_9_mrAG59EeWJs8kE7CZP8Q"/>
+                    <children xsi:type="advanced:Placeholder" xmi:id="_9_mDn259EeWJs8kE7CZP8Q" elementId="com.google.gwt.eclipse.DevModeView" toBeRendered="false" ref="_9_nRoG59EeWJs8kE7CZP8Q"/>
+                    <children xsi:type="advanced:Placeholder" xmi:id="_GBsxYW6BEeW-4KnVVMdFdA" elementId="org.eclipse.jdt.junit.ResultView" ref="_GBsxYG6BEeW-4KnVVMdFdA"/>
+                    <children xsi:type="advanced:Placeholder" xmi:id="_WI2zcW6HEeWxashXSiZ7Og" elementId="com.mountainminds.eclemma.ui.CoverageView" ref="_WI2zcG6HEeWxashXSiZ7Og"/>
                   </children>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_9_mDjm59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.editorss" containerData="5000" ref="_9_mqwG59EeWJs8kE7CZP8Q"/>
                 </children>
-                <children xsi:type="basic:PartStack" xmi:id="_9_mDkW59EeWJs8kE7CZP8Q" elementId="topRight" visible="false" containerData="3000" selectedElement="_9_mDkm59EeWJs8kE7CZP8Q">
-                  <tags>newtablook</tags>
+                <children xsi:type="basic:PartStack" xmi:id="_9_mDj259EeWJs8kE7CZP8Q" elementId="PartStack@1ddc28fa" visible="false" containerData="5000" selectedElement="_9_mDkG59EeWJs8kE7CZP8Q">
                   <tags>Minimized</tags>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_9_mDkm59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.views.ContentOutline" ref="_9_mrI259EeWJs8kE7CZP8Q"/>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_9_mDk259EeWJs8kE7CZP8Q" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" ref="_9_mrOm59EeWJs8kE7CZP8Q"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_9_mDkG59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.console.ConsoleView" ref="_9_mq6W59EeWJs8kE7CZP8Q"/>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_9_mDlG59EeWJs8kE7CZP8Q" elementId="bottomRight" visible="false" containerData="1062" selectedElement="_WI2zcW6HEeWxashXSiZ7Og">
+              <children xsi:type="basic:PartStack" xmi:id="_9_mDkW59EeWJs8kE7CZP8Q" elementId="topRight" visible="false" containerData="3000" selectedElement="_9_mDkm59EeWJs8kE7CZP8Q">
                 <tags>newtablook</tags>
-                <tags>org.eclipse.e4.secondaryDataStack</tags>
                 <tags>Minimized</tags>
-                <children xsi:type="advanced:Placeholder" xmi:id="_9_mDlW59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.views.AllMarkersView" toBeRendered="false" ref="_9_mq3m59EeWJs8kE7CZP8Q"/>
-                <children xsi:type="advanced:Placeholder" xmi:id="_9_mDlm59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.views.PropertySheet" ref="_9_mq4W59EeWJs8kE7CZP8Q"/>
-                <children xsi:type="advanced:Placeholder" xmi:id="_9_mDl259EeWJs8kE7CZP8Q" elementId="org.eclipse.wst.server.ui.ServersView" toBeRendered="false" ref="_9_mq4m59EeWJs8kE7CZP8Q"/>
-                <children xsi:type="advanced:Placeholder" xmi:id="_9_mDmG59EeWJs8kE7CZP8Q" elementId="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" ref="_9_mq4259EeWJs8kE7CZP8Q"/>
-                <children xsi:type="advanced:Placeholder" xmi:id="_9_mDmW59EeWJs8kE7CZP8Q" elementId="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" toBeRendered="false" ref="_9_mq5G59EeWJs8kE7CZP8Q"/>
-                <children xsi:type="advanced:Placeholder" xmi:id="_9_mDmm59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.views.ProblemView" toBeRendered="false" ref="_9_mq5259EeWJs8kE7CZP8Q"/>
-                <children xsi:type="advanced:Placeholder" xmi:id="_9_mDm259EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.views.TaskList" toBeRendered="false" ref="_9_mq6G59EeWJs8kE7CZP8Q"/>
-                <children xsi:type="advanced:Placeholder" xmi:id="_9_mDnG59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.views.BookmarkView" toBeRendered="false" ref="_9_mq_m59EeWJs8kE7CZP8Q"/>
-                <children xsi:type="advanced:Placeholder" xmi:id="_9_mDnW59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.views.ProgressView" toBeRendered="false" ref="_9_mq_259EeWJs8kE7CZP8Q"/>
-                <children xsi:type="advanced:Placeholder" xmi:id="_9_mDnm59EeWJs8kE7CZP8Q" elementId="org.eclipse.search.ui.views.SearchView" ref="_9_mrAG59EeWJs8kE7CZP8Q"/>
-                <children xsi:type="advanced:Placeholder" xmi:id="_9_mDn259EeWJs8kE7CZP8Q" elementId="com.google.gwt.eclipse.DevModeView" toBeRendered="false" ref="_9_nRoG59EeWJs8kE7CZP8Q"/>
-                <children xsi:type="advanced:Placeholder" xmi:id="_GBsxYW6BEeW-4KnVVMdFdA" elementId="org.eclipse.jdt.junit.ResultView" ref="_GBsxYG6BEeW-4KnVVMdFdA"/>
-                <children xsi:type="advanced:Placeholder" xmi:id="_WI2zcW6HEeWxashXSiZ7Og" elementId="com.mountainminds.eclemma.ui.CoverageView" ref="_WI2zcG6HEeWxashXSiZ7Og"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_9_mDkm59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.views.ContentOutline" ref="_9_mrI259EeWJs8kE7CZP8Q"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_9_mDk259EeWJs8kE7CZP8Q" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" ref="_9_mrOm59EeWJs8kE7CZP8Q"/>
               </children>
             </children>
           </children>
@@ -146,18 +147,57 @@
       <toolbar xmi:id="_9_mqv259EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.internal.introview" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_9_mqwG59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.editorss" selectedElement="_9_mqwW59EeWJs8kE7CZP8Q">
-      <children xsi:type="basic:PartStack" xmi:id="_9_mqwW59EeWJs8kE7CZP8Q" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_qdKlsHDuEeWazIHAaJSHeg">
+      <children xsi:type="basic:PartStack" xmi:id="_9_mqwW59EeWJs8kE7CZP8Q" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_iCHLEHQGEeWvgrYMhFj1HA">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_qdKlsHDuEeWazIHAaJSHeg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Parser.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Parser.java&quot; partName=&quot;Parser.java&quot; title=&quot;Parser.java&quot; tooltip=&quot;TP3/Parser.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TP3/Parser.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1543&quot; selectionTopPixel=&quot;855&quot;/>&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_oEZacHQCEeWvgrYMhFj1HA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="TimerTestCase4.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase4.java&quot; partName=&quot;TimerTestCase4.java&quot; title=&quot;TimerTestCase4.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/TimerTestCase4.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TP3_Software_Testing/src/tp4/TimerTestCase4.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;254&quot; selectionTopPixel=&quot;591&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_gi40AHQGEeWvgrYMhFj1HA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="TimerTestCase3.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase3.java&quot; partName=&quot;TimerTestCase3.java&quot; title=&quot;TimerTestCase3.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/TimerTestCase3.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TP3_Software_Testing/src/tp4/TimerTestCase3.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_gpsmoHQGEeWvgrYMhFj1HA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="TimerTestCase2.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase2.java&quot; partName=&quot;TimerTestCase2.java&quot; title=&quot;TimerTestCase2.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/TimerTestCase2.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TP3_Software_Testing/src/tp4/TimerTestCase2.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1238&quot; selectionTopPixel=&quot;309&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_gutCcHQGEeWvgrYMhFj1HA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="TimerTestCase.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase.java&quot; partName=&quot;TimerTestCase.java&quot; title=&quot;TimerTestCase.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/TimerTestCase.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TP3_Software_Testing/src/tp4/TimerTestCase.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;903&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_hpXT4HQGEeWvgrYMhFj1HA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="TimerException.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerException.java&quot; partName=&quot;TimerException.java&quot; title=&quot;TimerException.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/TimerException.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TP3_Software_Testing/src/tp4/TimerException.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_iCHLEHQGEeWvgrYMhFj1HA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Timer.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Timer.java&quot; partName=&quot;Timer.java&quot; title=&quot;Timer.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/Timer.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TP3_Software_Testing/src/tp4/Timer.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;5677&quot; selectionTopPixel=&quot;447&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_yvPaQHQHEeWvgrYMhFj1HA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="TimerTestCase5.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase5.java&quot; partName=&quot;TimerTestCase5.java&quot; title=&quot;TimerTestCase5.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/TimerTestCase5.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TP3_Software_Testing/src/tp4/TimerTestCase5.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1016&quot; selectionTopPixel=&quot;309&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_KkdtgHQJEeWvgrYMhFj1HA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="TimerTestCase6.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TimerTestCase6.java&quot; partName=&quot;TimerTestCase6.java&quot; title=&quot;TimerTestCase6.java&quot; tooltip=&quot;TP3_Software_Testing/src/tp4/TimerTestCase6.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TP3_Software_Testing/src/tp4/TimerTestCase6.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1249&quot; selectionTopPixel=&quot;275&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
         </children>
       </children>
     </sharedElements>
@@ -165,6 +205,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;1&quot; currentWorkingSetName=&quot;Aggregate for window 1444216637179&quot; org.eclipse.cdt.ui.cview.groupincludes=&quot;false&quot; org.eclipse.cdt.ui.cview.groupmacros=&quot;false&quot; org.eclipse.cdt.ui.editor.CUChildren=&quot;true&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_9_mqyG59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.navigator.ProjectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -326,6 +368,7 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view failuresOnly=&quot;false&quot; layout=&quot;1&quot; orientation=&quot;2&quot; ratio=&quot;500&quot; scroll=&quot;false&quot; time=&quot;true&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:Java</tags>
+      <tags>highlighted</tags>
       <menus xmi:id="_GC3PAG6BEeW-4KnVVMdFdA" elementId="org.eclipse.jdt.junit.ResultView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -349,7 +392,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_9_nRpm59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_NrbcgHDqEeWazIHAaJSHeg" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_9_q98W59EeWJs8kE7CZP8Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_IM8wcXPxEeWvgrYMhFj1HA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_9_q98W59EeWJs8kE7CZP8Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_9_nRuG59EeWJs8kE7CZP8Q" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -379,7 +422,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_9_nSEG59EeWJs8kE7CZP8Q" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Nrg8EnDqEeWazIHAaJSHeg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_9_q8ym59EeWJs8kE7CZP8Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_INC3EHPxEeWvgrYMhFj1HA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_9_q8ym59EeWJs8kE7CZP8Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_9_nSG259EeWJs8kE7CZP8Q" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -421,6 +464,8 @@
         <tags>TrimStack</tags>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_9_nSNm59EeWJs8kE7CZP8Q" elementId="bottomRight(org.eclipse.jst.j2ee.J2EEPerspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <persistedState key="XSize" value="600"/>
+        <persistedState key="YSize" value="400"/>
         <tags>TrimStack</tags>
       </children>
     </trimBars>
