@@ -1,0 +1,17 @@
+log4j:WARN No appenders could be found for logger (org.apache.jena.riot.system.stream.JenaIOEnvironment).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+~~ Question 1: Affichage des instances de Flemish
+( ?s = <http://example.org/r1> ) -> [Root]
+~~ Question 2: Affichage des noms des instances de Flemish
+( ?name = "Rembrandt" ) ( ?surname = "Smith" )
+~~ Question 3 ajout d'un cubiste, puis affichage du résultat via la question 4:
+( ?b = "Georges" ) ( ?c = "Braque" )
+~~ Affichage des instances de la classe Painter sans modèle inféré:
+Pas de résultat correspondant à la requête
+~~ Passage au modèle inféré
+~~ Affichage des instances de la classe Painter avec modèle inféré:
+( ?b = <http://example.org/r1> ) ( ?c = "Rembrandt" ) ( ?d = "Smith" )
+( ?b = <http://example.org/r3> ) ( ?c = "Georges" ) ( ?d = "Braque" )
+-> On remarque que cette fois ci en utilisant un graphe inféré, Jena est capable de déduire qu'un objet est une instance de la classe painter car il est le domaine de la propriété 'paints'. 
+
