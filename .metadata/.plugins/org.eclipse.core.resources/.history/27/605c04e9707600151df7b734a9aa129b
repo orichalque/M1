@@ -1,0 +1,18 @@
+/*
+ * Reader.cpp
+ *
+ *  Created on: 19 oct. 2015
+ *      Author: E104607D
+ */
+
+#include "Reader.h"
+
+Reader::Reader() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Reader::~Reader() {
+	// TODO Auto-generated destructor stub
+}
+

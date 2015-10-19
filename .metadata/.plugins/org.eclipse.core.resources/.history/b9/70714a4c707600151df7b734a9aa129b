@@ -1,0 +1,28 @@
+/*
+ * Reader.h
+ *
+ *  Created on: 19 oct. 2015
+ *      Author: E104607D
+ */
+
+#ifndef READER_H_
+#define READER_H_
+#include <iostream>
+#include <string>
+#include <vector>
+
+/**
+ * \class Reader
+ * \brief reads a file and gather informations to be written in the PDF afterward
+ */
+class Reader {
+public:
+	Reader();
+	virtual ~Reader();
+
+protected:
+	std::vector<std::string> names;
+	std::vector<double>
+};
+
+#endif /* READER_H_ */

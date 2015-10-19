@@ -27,17 +27,22 @@ import com.sun.media.jfxmedia.logging.Logger;
  */
 @RunWith ( Parameterized.class ) public class TimerTestCase6 {
 	private Timer t;
-	private int arg1;
+	private Object arg1;
+	private boolean arg2;
+	private boolean arg3;
 
 	
 	/**
 	 * Constructor
 	 * @param arg1
 	 * @param arg2
+	 * @throws TimerException 
 	 */
-	public TimerTestCase6(int arg1) {
+	public TimerTestCase6(Object arg1, boolean arg2, boolean arg3) throws TimerException {
 		this.arg1= arg1;
-
+		this.arg2 = arg2;
+		this.arg3 = arg3;
+		t = new Timer(5,5,5);
 	}
 	
 	/**
@@ -47,28 +52,53 @@ import com.sun.media.jfxmedia.logging.Logger;
 	 */
 	@Parameters public static Collection data() throws TimerException {
 		Object[][] data = {
-				{new Timer(5,5,5)},
-				{new Timer(5,5,4)},
-				{new Timer(5,4,5)},
-				{new Timer(5,4,4)},
-				{new Timer(4,5,5)},
-				{new Timer(4,5,4)},
-				{new Timer(4,4,5)},
-				{new Timer(4,4,4)},
-				{new GregorianCalendar()}
-				
+				{new Timer(5,5,5), true, true},
+				{new Timer(5,5,4), true, true},
+				{new Timer(5,4,5), true, true},
+				{new Timer(5,4,4), true, true},
+				{new Timer(4,5,5), true, true},
+				{new Timer(4,5,4), true, true},
+				{new Timer(4,4,5), true, true},
+				{new Timer(4,4,4), true, true},
+				{new Timer(5,5,5), false, true},
+				{new Timer(5,5,4), false, true},
+				{new Timer(5,4,5), false, true},
+				{new Timer(5,4,4), false, true},
+				{new Timer(4,5,5), false, true},
+				{new Timer(4,5,4), false, true},
+				{new Timer(4,4,5), false, true},
+				{new Timer(4,4,4), false, true},
+				{new Timer(5,5,5), true, false},
+				{new Timer(5,5,4), true, false},
+				{new Timer(5,4,5), true, false},
+				{new Timer(5,4,4), true, false},
+				{new Timer(4,5,5), true, false},
+				{new Timer(4,5,4), true, false},
+				{new Timer(4,4,5), true, false},
+				{new Timer(4,4,4), true, false},
+				{new Timer(5,5,5), false, false},
+				{new Timer(5,5,4), false, false},
+				{new Timer(5,4,5), false, false},
+				{new Timer(5,4,4), false, false},
+				{new Timer(4,5,5), false, false},
+				{new Timer(4,5,4), false, false},
+				{new Timer(4,4,5), false, false},
+				{new Timer(4,4,4), false, false},
+				{new GregorianCalendar(), false, false}
 		};
-		
 		return Arrays.asList(data);
 	}
-	 
-	/*
-	 * Actually Working !
-	 */
-	@Test
-	public void testTimer() throws TimerException {
-		Timer t = new Timer(5,5,5);
-		t.equals(arg1);
-	}
 
+	@Test
+	public void testEquals() throws TimerException {
+		t.ringing = arg2;
+		t.active = arg3;
+		assertTrue(t.equals(arg1));
+		
+	}
+	
+	@Test
+	public void test() {
+		
+	}
 }

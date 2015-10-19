@@ -1,0 +1,46 @@
+/*
+ * Reader.cpp
+ *
+ *  Created on: 19 oct. 2015
+ *      Author: E104607D
+ */
+
+#include "Reader.h"
+using namespace std;
+
+Reader::Reader():title(""), subtitle(""), note("") {
+	// TODO Auto-generated constructor stub
+}
+
+void Reader::parse(string textOfTheFile) {
+}
+
+string Reader::read(char* fileName) {
+	ifstream file (fileName);
+	string line;
+	string fileText("");
+	if (file.is_open()){
+		//Reading of the file to extract text
+		while (getline (file, line)) {
+			fileText += (line+"\n");
+		}
+		cout << fileText << endl;
+		return fileText;
+	} else {
+		cout << "couldn't read the file" << endl;
+		return "";
+	}
+
+}
+
+Reader::~Reader() {
+	// TODO Auto-generated destructor stub
+}
+
+int main() {
+	Reader *r = new Reader();
+	char* file = "tmp";
+	r->read(file);
+	delete r;
+
+}

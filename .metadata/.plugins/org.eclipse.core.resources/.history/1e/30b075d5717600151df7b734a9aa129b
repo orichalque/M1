@@ -1,0 +1,31 @@
+/*
+ * Reader.cpp
+ *
+ *  Created on: 19 oct. 2015
+ *      Author: E104607D
+ */
+
+#include "Reader.h"
+#include <fstream>
+using namespace std;
+
+Reader::Reader():title(""), subtitle(""), note("") {
+	// TODO Auto-generated constructor stub
+}
+
+void Reader::parse(string textOfTheFile) {
+}
+
+string Reader::read(string fileName) {
+	ofstream file (fileName);
+	if (file.is_open()){
+
+	}
+
+}
+
+Reader::~Reader() {
+	// TODO Auto-generated destructor stub
+}
+
+

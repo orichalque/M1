@@ -1,0 +1,17 @@
+/*
+ * Reader.h
+ *
+ *  Created on: 19 oct. 2015
+ *      Author: E104607D
+ */
+
+#ifndef READER_H_
+#define READER_H_
+
+class Reader {
+public:
+	Reader();
+	virtual ~Reader();
+};
+
+#endif /* READER_H_ */

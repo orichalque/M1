@@ -1,0 +1,79 @@
+/*
+ * Reader.cpp
+ *
+ *  Created on: 19 oct. 2015
+ *      Author: E104607D
+ */
+
+#include "Reader.h"
+using namespace std;
+
+Reader::Reader():title(""), subtitle(""), note("") {
+	// TODO Auto-generated constructor stub
+}
+
+string Reader::read(char* fileName) {
+	ifstream file (fileName);
+	string line;
+	string fileText("");
+	if (file.is_open()){
+		//Reading of the file to extract text
+		while (getline (file, line)) {
+			fileText += (line+"\n");
+			if (line.at(0) == '>') {
+				//KeyWord
+				switch (line.at(1)){
+					case 'T':
+						//Won't check if first word is "TITLE"
+						title = line.substr(7);
+						break;
+					case 'S':
+
+						subtitle = line.substr(10);
+						break;
+					case 'N':
+
+						note = line.substr(6);
+						break;
+					default:
+
+						break;
+				}
+			} else {
+				//Parsing of the line to extract informations
+				istringstream *parser = new istringstream(line);
+				string word;
+				double value;
+				//We assume that if you don't have a ">" at the start of your line,
+				//Then you can extract name & value datas
+				while (parser >> word) {
+					names.push_back(word);
+				}
+				getline (file, line);
+				parser = new istringstream(line);
+				while (parser >> value) {
+					values.push_back(value);
+				}
+				delete parser;
+			}
+		}
+		cout << fileText << endl;
+		return fileText;
+	} else {
+		cout << "couldn't read the file" << endl;
+		return "";
+	}
+
+}
+
+Reader::~Reader() {
+	// TODO Auto-generated destructor stub
+}
+
+int main() {
+	Reader *r = new Reader();
+	char* file = "tmp";
+	r->read(file);
+	delete r;
+
+}

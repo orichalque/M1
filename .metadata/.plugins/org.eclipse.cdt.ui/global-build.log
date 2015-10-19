@@ -1,0 +1,1228 @@
+17:08:41 **** Build of configuration Debug for project PDFGraph ****
+make all 
+Building file: ../CircularGrapher.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"CircularGrapher.d" -MT"CircularGrapher.d" -o "CircularGrapher.o" "../CircularGrapher.cpp"
+Finished building: ../CircularGrapher.cpp
+ 
+Building file: ../Grapher.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Grapher.d" -MT"Grapher.d" -o "Grapher.o" "../Grapher.cpp"
+Finished building: ../Grapher.cpp
+ 
+Building file: ../HistoGrapher.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HistoGrapher.d" -MT"HistoGrapher.d" -o "HistoGrapher.o" "../HistoGrapher.cpp"
+Finished building: ../HistoGrapher.cpp
+ 
+Building file: ../PointCloudGrapher.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PointCloudGrapher.d" -MT"PointCloudGrapher.d" -o "PointCloudGrapher.o" "../PointCloudGrapher.cpp"
+Finished building: ../PointCloudGrapher.cpp
+ 
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In member function ‘std::string Reader::read(std::string)’:
+../Reader.cpp:19:25: error: no matching function for call to ‘std::basic_ifstream<char>::basic_ifstream(std::string&)’
+  ifstream file (fileName);
+                         ^
+../Reader.cpp:19:25: note: candidates are:
+In file included from ../Reader.h:11:0,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/fstream:467:7: note: std::basic_ifstream<_CharT, _Traits>::basic_ifstream(const char*, std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; std::ios_base::openmode = std::_Ios_Openmode]
+       basic_ifstream(const char* __s, ios_base::openmode __mode = ios_base::in)
+       ^
+/usr/include/c++/4.8/fstream:467:7: note:   no known conversion for argument 1 from ‘std::string {aka std::basic_string<char>}’ to ‘const char*’
+/usr/include/c++/4.8/fstream:453:7: note: std::basic_ifstream<_CharT, _Traits>::basic_ifstream() [with _CharT = char; _Traits = std::char_traits<char>]
+       basic_ifstream() : __istream_type(), _M_filebuf()
+       ^
+/usr/include/c++/4.8/fstream:453:7: note:   candidate expects 0 arguments, 1 provided
+/usr/include/c++/4.8/fstream:427:11: note: std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/fstream:427:11: note:   no known conversion for argument 1 from ‘std::string {aka std::basic_string<char>}’ to ‘const std::basic_ifstream<char>&’
+make: *** [Reader.o] Erreur 1
+17:10:10 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:42:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  r->read("tmp");
+               ^
+Finished building: ../Reader.cpp
+ 
+Building file: ../pdflib.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"pdflib.d" -MT"pdflib.d" -o "pdflib.o" "../pdflib.cpp"
+In file included from ../pdflib.cpp:27:0:
+../pdflib.hpp:25:20: fatal error: pdflib.h: Aucun fichier ou dossier de ce type
+ #include "pdflib.h"
+                    ^
+compilation terminated.
+make: *** [pdflib.o] Erreur 1
+17:39:57 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,012 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In member function ‘std::string Reader::read(char*)’:
+../Reader.cpp:23:22: warning: comparison with string literal results in unspecified behaviour [-Waddress]
+    if (line.at(0) == ">") {
+                      ^
+../Reader.cpp:23:22: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+../Reader.cpp:40:5: error: expected primary-expression before ‘}’ token
+     }
+     ^
+../Reader.cpp:40:5: error: expected ‘;’ before ‘}’ token
+../Reader.cpp:43:51: error: invalid use of incomplete type ‘std::istringstream {aka class std::basic_istringstream<char>}’
+     istringstream *parser = new istringstream(line);
+                                                   ^
+In file included from /usr/include/c++/4.8/ios:38:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/iosfwd:97:11: error: declaration of ‘std::istringstream {aka class std::basic_istringstream<char>}’
+     class basic_istringstream;
+           ^
+../Reader.cpp:48:19: error: no match for ‘operator>>’ (operand types are ‘std::istringstream* {aka std::basic_istringstream<char>*}’ and ‘std::string {aka std::basic_string<char>}’)
+     while (parser >> word) {
+                   ^
+../Reader.cpp:48:19: note: candidates are:
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:48:22: note:   mismatched types ‘std::basic_istream<_CharT, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:48:22: note:   mismatched types ‘std::basic_istream<_CharT, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:48:22: note:   mismatched types ‘std::basic_istream<_CharT, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8/istream:727:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:48:22: note:   mismatched types ‘std::basic_istream<char, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8/istream:732:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:48:22: note:   mismatched types ‘std::basic_istream<char, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8/istream:774:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:48:22: note:   mismatched types ‘std::basic_istream<char, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8/istream:779:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:48:22: note:   mismatched types ‘std::basic_istream<char, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+../Reader.cpp:52:36: error: invalid use of incomplete type ‘std::istringstream {aka class std::basic_istringstream<char>}’
+     parser = new istringstream(line);
+                                    ^
+In file included from /usr/include/c++/4.8/ios:38:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/iosfwd:97:11: error: declaration of ‘std::istringstream {aka class std::basic_istringstream<char>}’
+     class basic_istringstream;
+           ^
+../Reader.cpp:53:22: error: invalid operands of types ‘std::istringstream* {aka std::basic_istringstream<char>*}’ and ‘double’ to binary ‘operator>>’
+     while (parser >> value) {
+                      ^
+../Reader.cpp:56:12: warning: possible problem detected in invocation of delete operator: [enabled by default]
+     delete parser;
+            ^
+../Reader.cpp:43:20: warning: ‘parser’ has incomplete type [enabled by default]
+     istringstream *parser = new istringstream(line);
+                    ^
+In file included from /usr/include/c++/4.8/ios:38:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/iosfwd:97:11: warning: declaration of ‘class std::basic_istringstream<char>’ [enabled by default]
+     class basic_istringstream;
+           ^
+../Reader.cpp:56:12: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
+     delete parser;
+            ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:74:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:40:17 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,0027 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In member function ‘std::string Reader::read(char*)’:
+../Reader.cpp:40:5: error: expected primary-expression before ‘}’ token
+     }
+     ^
+../Reader.cpp:40:5: error: expected ‘;’ before ‘}’ token
+../Reader.cpp:43:51: error: invalid use of incomplete type ‘std::istringstream {aka class std::basic_istringstream<char>}’
+     istringstream *parser = new istringstream(line);
+                                                   ^
+In file included from /usr/include/c++/4.8/ios:38:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/iosfwd:97:11: error: declaration of ‘std::istringstream {aka class std::basic_istringstream<char>}’
+     class basic_istringstream;
+           ^
+../Reader.cpp:48:19: error: no match for ‘operator>>’ (operand types are ‘std::istringstream* {aka std::basic_istringstream<char>*}’ and ‘std::string {aka std::basic_string<char>}’)
+     while (parser >> word) {
+                   ^
+../Reader.cpp:48:19: note: candidates are:
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:48:22: note:   mismatched types ‘std::basic_istream<_CharT, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:48:22: note:   mismatched types ‘std::basic_istream<_CharT, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:48:22: note:   mismatched types ‘std::basic_istream<_CharT, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8/istream:727:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:48:22: note:   mismatched types ‘std::basic_istream<char, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8/istream:732:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:48:22: note:   mismatched types ‘std::basic_istream<char, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8/istream:774:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:48:22: note:   mismatched types ‘std::basic_istream<char, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8/istream:779:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:48:22: note:   mismatched types ‘std::basic_istream<char, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+../Reader.cpp:52:36: error: invalid use of incomplete type ‘std::istringstream {aka class std::basic_istringstream<char>}’
+     parser = new istringstream(line);
+                                    ^
+In file included from /usr/include/c++/4.8/ios:38:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/iosfwd:97:11: error: declaration of ‘std::istringstream {aka class std::basic_istringstream<char>}’
+     class basic_istringstream;
+           ^
+../Reader.cpp:53:22: error: invalid operands of types ‘std::istringstream* {aka std::basic_istringstream<char>*}’ and ‘double’ to binary ‘operator>>’
+     while (parser >> value) {
+                      ^
+../Reader.cpp:56:12: warning: possible problem detected in invocation of delete operator: [enabled by default]
+     delete parser;
+            ^
+../Reader.cpp:43:20: warning: ‘parser’ has incomplete type [enabled by default]
+     istringstream *parser = new istringstream(line);
+                    ^
+In file included from /usr/include/c++/4.8/ios:38:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/iosfwd:97:11: warning: declaration of ‘class std::basic_istringstream<char>’ [enabled by default]
+     class basic_istringstream;
+           ^
+../Reader.cpp:56:12: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
+     delete parser;
+            ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:74:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:41:35 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,0072 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In member function ‘std::string Reader::read(char*)’:
+../Reader.cpp:45:51: error: invalid use of incomplete type ‘std::istringstream {aka class std::basic_istringstream<char>}’
+     istringstream *parser = new istringstream(line);
+                                                   ^
+In file included from /usr/include/c++/4.8/ios:38:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/iosfwd:97:11: error: declaration of ‘std::istringstream {aka class std::basic_istringstream<char>}’
+     class basic_istringstream;
+           ^
+../Reader.cpp:50:19: error: no match for ‘operator>>’ (operand types are ‘std::istringstream* {aka std::basic_istringstream<char>*}’ and ‘std::string {aka std::basic_string<char>}’)
+     while (parser >> word) {
+                   ^
+../Reader.cpp:50:19: note: candidates are:
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:50:22: note:   mismatched types ‘std::basic_istream<_CharT, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:50:22: note:   mismatched types ‘std::basic_istream<_CharT, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:50:22: note:   mismatched types ‘std::basic_istream<_CharT, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8/istream:727:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:50:22: note:   mismatched types ‘std::basic_istream<char, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8/istream:732:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:50:22: note:   mismatched types ‘std::basic_istream<char, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8/istream:774:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:50:22: note:   mismatched types ‘std::basic_istream<char, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8/istream:779:5: note:   template argument deduction/substitution failed:
+../Reader.cpp:50:22: note:   mismatched types ‘std::basic_istream<char, _Traits>’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’
+     while (parser >> word) {
+                      ^
+../Reader.cpp:54:36: error: invalid use of incomplete type ‘std::istringstream {aka class std::basic_istringstream<char>}’
+     parser = new istringstream(line);
+                                    ^
+In file included from /usr/include/c++/4.8/ios:38:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/iosfwd:97:11: error: declaration of ‘std::istringstream {aka class std::basic_istringstream<char>}’
+     class basic_istringstream;
+           ^
+../Reader.cpp:55:22: error: invalid operands of types ‘std::istringstream* {aka std::basic_istringstream<char>*}’ and ‘double’ to binary ‘operator>>’
+     while (parser >> value) {
+                      ^
+../Reader.cpp:58:12: warning: possible problem detected in invocation of delete operator: [enabled by default]
+     delete parser;
+            ^
+../Reader.cpp:45:20: warning: ‘parser’ has incomplete type [enabled by default]
+     istringstream *parser = new istringstream(line);
+                    ^
+In file included from /usr/include/c++/4.8/ios:38:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/iosfwd:97:11: warning: declaration of ‘class std::basic_istringstream<char>’ [enabled by default]
+     class basic_istringstream;
+           ^
+../Reader.cpp:58:12: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
+     delete parser;
+            ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:76:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:42:47 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,013 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In member function ‘std::string Reader::read(char*)’:
+../Reader.cpp:44:30: error: variable ‘std::istringstream parser’ has initializer but incomplete type
+     istringstream parser(line);
+                              ^
+../Reader.cpp:57:12: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+     delete parser;
+            ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:75:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:43:21 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,00081 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In member function ‘std::string Reader::read(char*)’:
+../Reader.cpp:53:16: error: no match for call to ‘(std::istringstream {aka std::basic_istringstream<char>}) (std::string&)’
+     parser(line);
+                ^
+../Reader.cpp:57:12: warning: deleting ‘void*’ is undefined [enabled by default]
+     delete parser;
+            ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:75:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:43:40 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,011 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+In file included from /usr/include/c++/4.8/ios:42:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/ios_base.h: In member function ‘std::basic_ios<char>& std::basic_ios<char>::operator=(const std::basic_ios<char>&)’:
+/usr/include/c++/4.8/bits/ios_base.h:789:5: error: ‘std::ios_base& std::ios_base::operator=(const std::ios_base&)’ is private
+     operator=(const ios_base&);
+     ^
+In file included from /usr/include/c++/4.8/ios:44:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/basic_ios.h:66:11: error: within this context
+     class basic_ios : public ios_base
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream: In member function ‘std::basic_istream<char>& std::basic_istream<char>::operator=(const std::basic_istream<char>&)’:
+/usr/include/c++/4.8/istream:58:11: note: synthesized method ‘std::basic_ios<char>& std::basic_ios<char>::operator=(const std::basic_ios<char>&)’ first required here 
+     class basic_istream : virtual public basic_ios<_CharT, _Traits>
+           ^
+In file included from ../Reader.h:14:0,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/sstream: In member function ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’:
+/usr/include/c++/4.8/sstream:272:11: note: synthesized method ‘std::basic_istream<char>& std::basic_istream<char>::operator=(const std::basic_istream<char>&)’ first required here 
+     class basic_istringstream : public basic_istream<_CharT, _Traits>
+           ^
+In file included from /usr/include/c++/4.8/ios:43:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/streambuf: In member function ‘std::basic_stringbuf<char>& std::basic_stringbuf<char>::operator=(const std::basic_stringbuf<char>&)’:
+/usr/include/c++/4.8/streambuf:810:7: error: ‘std::basic_streambuf<_CharT, _Traits>& std::basic_streambuf<_CharT, _Traits>::operator=(const std::basic_streambuf<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]’ is private
+       operator=(const basic_streambuf&) { return *this; };
+       ^
+In file included from ../Reader.h:14:0,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/sstream:64:11: error: within this context
+     class basic_stringbuf : public basic_streambuf<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/sstream: In member function ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’:
+/usr/include/c++/4.8/sstream:272:11: note: synthesized method ‘std::basic_stringbuf<char>& std::basic_stringbuf<char>::operator=(const std::basic_stringbuf<char>&)’ first required here 
+     class basic_istringstream : public basic_istream<_CharT, _Traits>
+           ^
+../Reader.cpp: In member function ‘std::string Reader::read(char*)’:
+../Reader.cpp:53:12: note: synthesized method ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’ first required here 
+     parser = istringstream(line);
+            ^
+../Reader.cpp:57:12: warning: deleting ‘void*’ is undefined [enabled by default]
+     delete parser;
+            ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:75:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:43:46 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,015 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+In file included from /usr/include/c++/4.8/ios:42:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/ios_base.h: In member function ‘std::basic_ios<char>& std::basic_ios<char>::operator=(const std::basic_ios<char>&)’:
+/usr/include/c++/4.8/bits/ios_base.h:789:5: error: ‘std::ios_base& std::ios_base::operator=(const std::ios_base&)’ is private
+     operator=(const ios_base&);
+     ^
+In file included from /usr/include/c++/4.8/ios:44:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/basic_ios.h:66:11: error: within this context
+     class basic_ios : public ios_base
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream: In member function ‘std::basic_istream<char>& std::basic_istream<char>::operator=(const std::basic_istream<char>&)’:
+/usr/include/c++/4.8/istream:58:11: note: synthesized method ‘std::basic_ios<char>& std::basic_ios<char>::operator=(const std::basic_ios<char>&)’ first required here 
+     class basic_istream : virtual public basic_ios<_CharT, _Traits>
+           ^
+In file included from ../Reader.h:14:0,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/sstream: In member function ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’:
+/usr/include/c++/4.8/sstream:272:11: note: synthesized method ‘std::basic_istream<char>& std::basic_istream<char>::operator=(const std::basic_istream<char>&)’ first required here 
+     class basic_istringstream : public basic_istream<_CharT, _Traits>
+           ^
+In file included from /usr/include/c++/4.8/ios:43:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/streambuf: In member function ‘std::basic_stringbuf<char>& std::basic_stringbuf<char>::operator=(const std::basic_stringbuf<char>&)’:
+/usr/include/c++/4.8/streambuf:810:7: error: ‘std::basic_streambuf<_CharT, _Traits>& std::basic_streambuf<_CharT, _Traits>::operator=(const std::basic_streambuf<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]’ is private
+       operator=(const basic_streambuf&) { return *this; };
+       ^
+In file included from ../Reader.h:14:0,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/sstream:64:11: error: within this context
+     class basic_stringbuf : public basic_streambuf<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/sstream: In member function ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’:
+/usr/include/c++/4.8/sstream:272:11: note: synthesized method ‘std::basic_stringbuf<char>& std::basic_stringbuf<char>::operator=(const std::basic_stringbuf<char>&)’ first required here 
+     class basic_istringstream : public basic_istream<_CharT, _Traits>
+           ^
+../Reader.cpp: In member function ‘std::string Reader::read(char*)’:
+../Reader.cpp:53:12: note: synthesized method ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’ first required here 
+     parser = istringstream(line);
+            ^
+../Reader.cpp:57:12: warning: deleting ‘void*’ is undefined [enabled by default]
+     delete parser;
+            ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:75:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:44:09 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,012 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+In file included from /usr/include/c++/4.8/ios:42:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/ios_base.h: In member function ‘std::basic_ios<char>& std::basic_ios<char>::operator=(const std::basic_ios<char>&)’:
+/usr/include/c++/4.8/bits/ios_base.h:789:5: error: ‘std::ios_base& std::ios_base::operator=(const std::ios_base&)’ is private
+     operator=(const ios_base&);
+     ^
+In file included from /usr/include/c++/4.8/ios:44:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/basic_ios.h:66:11: error: within this context
+     class basic_ios : public ios_base
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream: In member function ‘std::basic_istream<char>& std::basic_istream<char>::operator=(const std::basic_istream<char>&)’:
+/usr/include/c++/4.8/istream:58:11: note: synthesized method ‘std::basic_ios<char>& std::basic_ios<char>::operator=(const std::basic_ios<char>&)’ first required here 
+     class basic_istream : virtual public basic_ios<_CharT, _Traits>
+           ^
+In file included from ../Reader.h:14:0,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/sstream: In member function ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’:
+/usr/include/c++/4.8/sstream:272:11: note: synthesized method ‘std::basic_istream<char>& std::basic_istream<char>::operator=(const std::basic_istream<char>&)’ first required here 
+     class basic_istringstream : public basic_istream<_CharT, _Traits>
+           ^
+In file included from /usr/include/c++/4.8/ios:43:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/streambuf: In member function ‘std::basic_stringbuf<char>& std::basic_stringbuf<char>::operator=(const std::basic_stringbuf<char>&)’:
+/usr/include/c++/4.8/streambuf:810:7: error: ‘std::basic_streambuf<_CharT, _Traits>& std::basic_streambuf<_CharT, _Traits>::operator=(const std::basic_streambuf<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]’ is private
+       operator=(const basic_streambuf&) { return *this; };
+       ^
+In file included from ../Reader.h:14:0,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/sstream:64:11: error: within this context
+     class basic_stringbuf : public basic_streambuf<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/sstream: In member function ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’:
+/usr/include/c++/4.8/sstream:272:11: note: synthesized method ‘std::basic_stringbuf<char>& std::basic_stringbuf<char>::operator=(const std::basic_stringbuf<char>&)’ first required here 
+     class basic_istringstream : public basic_istream<_CharT, _Traits>
+           ^
+../Reader.cpp: In member function ‘std::string Reader::read(char*)’:
+../Reader.cpp:53:12: note: synthesized method ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’ first required here 
+     parser = istringstream(line);
+            ^
+../Reader.cpp:57:12: warning: deleting ‘void*’ is undefined [enabled by default]
+     delete parser;
+            ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:75:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:44:41 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,01 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+In file included from /usr/include/c++/4.8/ios:42:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/ios_base.h: In member function ‘std::basic_ios<char>& std::basic_ios<char>::operator=(const std::basic_ios<char>&)’:
+/usr/include/c++/4.8/bits/ios_base.h:789:5: error: ‘std::ios_base& std::ios_base::operator=(const std::ios_base&)’ is private
+     operator=(const ios_base&);
+     ^
+In file included from /usr/include/c++/4.8/ios:44:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/basic_ios.h:66:11: error: within this context
+     class basic_ios : public ios_base
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream: In member function ‘std::basic_istream<char>& std::basic_istream<char>::operator=(const std::basic_istream<char>&)’:
+/usr/include/c++/4.8/istream:58:11: note: synthesized method ‘std::basic_ios<char>& std::basic_ios<char>::operator=(const std::basic_ios<char>&)’ first required here 
+     class basic_istream : virtual public basic_ios<_CharT, _Traits>
+           ^
+In file included from ../Reader.h:14:0,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/sstream: In member function ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’:
+/usr/include/c++/4.8/sstream:272:11: note: synthesized method ‘std::basic_istream<char>& std::basic_istream<char>::operator=(const std::basic_istream<char>&)’ first required here 
+     class basic_istringstream : public basic_istream<_CharT, _Traits>
+           ^
+In file included from /usr/include/c++/4.8/ios:43:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/streambuf: In member function ‘std::basic_stringbuf<char>& std::basic_stringbuf<char>::operator=(const std::basic_stringbuf<char>&)’:
+/usr/include/c++/4.8/streambuf:810:7: error: ‘std::basic_streambuf<_CharT, _Traits>& std::basic_streambuf<_CharT, _Traits>::operator=(const std::basic_streambuf<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]’ is private
+       operator=(const basic_streambuf&) { return *this; };
+       ^
+In file included from ../Reader.h:14:0,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/sstream:64:11: error: within this context
+     class basic_stringbuf : public basic_streambuf<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/sstream: In member function ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’:
+/usr/include/c++/4.8/sstream:272:11: note: synthesized method ‘std::basic_stringbuf<char>& std::basic_stringbuf<char>::operator=(const std::basic_stringbuf<char>&)’ first required here 
+     class basic_istringstream : public basic_istream<_CharT, _Traits>
+           ^
+../Reader.cpp: In member function ‘std::string Reader::read(char*)’:
+../Reader.cpp:53:12: note: synthesized method ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’ first required here 
+     parser = istringstream(line);
+            ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:74:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:44:57 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,0043 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+In file included from /usr/include/c++/4.8/ios:42:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/ios_base.h: In member function ‘std::basic_ios<char>& std::basic_ios<char>::operator=(const std::basic_ios<char>&)’:
+/usr/include/c++/4.8/bits/ios_base.h:789:5: error: ‘std::ios_base& std::ios_base::operator=(const std::ios_base&)’ is private
+     operator=(const ios_base&);
+     ^
+In file included from /usr/include/c++/4.8/ios:44:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/basic_ios.h:66:11: error: within this context
+     class basic_ios : public ios_base
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream: In member function ‘std::basic_istream<char>& std::basic_istream<char>::operator=(const std::basic_istream<char>&)’:
+/usr/include/c++/4.8/istream:58:11: note: synthesized method ‘std::basic_ios<char>& std::basic_ios<char>::operator=(const std::basic_ios<char>&)’ first required here 
+     class basic_istream : virtual public basic_ios<_CharT, _Traits>
+           ^
+In file included from ../Reader.h:14:0,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/sstream: In member function ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’:
+/usr/include/c++/4.8/sstream:272:11: note: synthesized method ‘std::basic_istream<char>& std::basic_istream<char>::operator=(const std::basic_istream<char>&)’ first required here 
+     class basic_istringstream : public basic_istream<_CharT, _Traits>
+           ^
+In file included from /usr/include/c++/4.8/ios:43:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/streambuf: In member function ‘std::basic_stringbuf<char>& std::basic_stringbuf<char>::operator=(const std::basic_stringbuf<char>&)’:
+/usr/include/c++/4.8/streambuf:810:7: error: ‘std::basic_streambuf<_CharT, _Traits>& std::basic_streambuf<_CharT, _Traits>::operator=(const std::basic_streambuf<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]’ is private
+       operator=(const basic_streambuf&) { return *this; };
+       ^
+In file included from ../Reader.h:14:0,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/sstream:64:11: error: within this context
+     class basic_stringbuf : public basic_streambuf<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/sstream: In member function ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’:
+/usr/include/c++/4.8/sstream:272:11: note: synthesized method ‘std::basic_stringbuf<char>& std::basic_stringbuf<char>::operator=(const std::basic_stringbuf<char>&)’ first required here 
+     class basic_istringstream : public basic_istream<_CharT, _Traits>
+           ^
+../Reader.cpp: In member function ‘std::string Reader::read(char*)’:
+../Reader.cpp:53:12: note: synthesized method ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’ first required here 
+     parser = istringstream(line);
+            ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:74:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:46:27 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,0068 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+In file included from /usr/include/c++/4.8/ios:42:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/ios_base.h: In member function ‘std::basic_ios<char>& std::basic_ios<char>::operator=(const std::basic_ios<char>&)’:
+/usr/include/c++/4.8/bits/ios_base.h:789:5: error: ‘std::ios_base& std::ios_base::operator=(const std::ios_base&)’ is private
+     operator=(const ios_base&);
+     ^
+In file included from /usr/include/c++/4.8/ios:44:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/basic_ios.h:66:11: error: within this context
+     class basic_ios : public ios_base
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream: In member function ‘std::basic_istream<char>& std::basic_istream<char>::operator=(const std::basic_istream<char>&)’:
+/usr/include/c++/4.8/istream:58:11: note: synthesized method ‘std::basic_ios<char>& std::basic_ios<char>::operator=(const std::basic_ios<char>&)’ first required here 
+     class basic_istream : virtual public basic_ios<_CharT, _Traits>
+           ^
+In file included from ../Reader.h:14:0,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/sstream: In member function ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’:
+/usr/include/c++/4.8/sstream:272:11: note: synthesized method ‘std::basic_istream<char>& std::basic_istream<char>::operator=(const std::basic_istream<char>&)’ first required here 
+     class basic_istringstream : public basic_istream<_CharT, _Traits>
+           ^
+In file included from /usr/include/c++/4.8/ios:43:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/streambuf: In member function ‘std::basic_stringbuf<char>& std::basic_stringbuf<char>::operator=(const std::basic_stringbuf<char>&)’:
+/usr/include/c++/4.8/streambuf:810:7: error: ‘std::basic_streambuf<_CharT, _Traits>& std::basic_streambuf<_CharT, _Traits>::operator=(const std::basic_streambuf<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]’ is private
+       operator=(const basic_streambuf&) { return *this; };
+       ^
+In file included from ../Reader.h:14:0,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/sstream:64:11: error: within this context
+     class basic_stringbuf : public basic_streambuf<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/sstream: In member function ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’:
+/usr/include/c++/4.8/sstream:272:11: note: synthesized method ‘std::basic_stringbuf<char>& std::basic_stringbuf<char>::operator=(const std::basic_stringbuf<char>&)’ first required here 
+     class basic_istringstream : public basic_istream<_CharT, _Traits>
+           ^
+../Reader.cpp: In member function ‘std::string Reader::read(char*)’:
+../Reader.cpp:53:12: note: synthesized method ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’ first required here 
+     parser = istringstream(line);
+            ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:75:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:46:48 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,017 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+In file included from /usr/include/c++/4.8/ios:42:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/ios_base.h: In member function ‘std::basic_ios<char>& std::basic_ios<char>::operator=(const std::basic_ios<char>&)’:
+/usr/include/c++/4.8/bits/ios_base.h:789:5: error: ‘std::ios_base& std::ios_base::operator=(const std::ios_base&)’ is private
+     operator=(const ios_base&);
+     ^
+In file included from /usr/include/c++/4.8/ios:44:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/bits/basic_ios.h:66:11: error: within this context
+     class basic_ios : public ios_base
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream: In member function ‘std::basic_istream<char>& std::basic_istream<char>::operator=(const std::basic_istream<char>&)’:
+/usr/include/c++/4.8/istream:58:11: note: synthesized method ‘std::basic_ios<char>& std::basic_ios<char>::operator=(const std::basic_ios<char>&)’ first required here 
+     class basic_istream : virtual public basic_ios<_CharT, _Traits>
+           ^
+In file included from ../Reader.h:14:0,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/sstream: In member function ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’:
+/usr/include/c++/4.8/sstream:272:11: note: synthesized method ‘std::basic_istream<char>& std::basic_istream<char>::operator=(const std::basic_istream<char>&)’ first required here 
+     class basic_istringstream : public basic_istream<_CharT, _Traits>
+           ^
+In file included from /usr/include/c++/4.8/ios:43:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/streambuf: In member function ‘std::basic_stringbuf<char>& std::basic_stringbuf<char>::operator=(const std::basic_stringbuf<char>&)’:
+/usr/include/c++/4.8/streambuf:810:7: error: ‘std::basic_streambuf<_CharT, _Traits>& std::basic_streambuf<_CharT, _Traits>::operator=(const std::basic_streambuf<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]’ is private
+       operator=(const basic_streambuf&) { return *this; };
+       ^
+In file included from ../Reader.h:14:0,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/sstream:64:11: error: within this context
+     class basic_stringbuf : public basic_streambuf<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/sstream: In member function ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’:
+/usr/include/c++/4.8/sstream:272:11: note: synthesized method ‘std::basic_stringbuf<char>& std::basic_stringbuf<char>::operator=(const std::basic_stringbuf<char>&)’ first required here 
+     class basic_istringstream : public basic_istream<_CharT, _Traits>
+           ^
+../Reader.cpp: In member function ‘std::string Reader::read(char*)’:
+../Reader.cpp:53:12: note: synthesized method ‘std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)’ first required here 
+     parser = istringstream(line);
+            ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:75:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:47:11 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,0096 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In member function ‘std::string Reader::read(char*)’:
+../Reader.cpp:53:12: error: no match for ‘operator=’ (operand types are ‘std::istringstream {aka std::basic_istringstream<char>}’ and ‘std::istringstream* {aka std::basic_istringstream<char>*}’)
+     parser = new istringstream(line);
+            ^
+../Reader.cpp:53:12: note: candidate is:
+In file included from ../Reader.h:14:0,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/sstream:272:11: note: std::basic_istringstream<char>& std::basic_istringstream<char>::operator=(const std::basic_istringstream<char>&)
+     class basic_istringstream : public basic_istream<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/sstream:272:11: note:   no known conversion for argument 1 from ‘std::istringstream* {aka std::basic_istringstream<char>*}’ to ‘const std::basic_istringstream<char>&’
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:75:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:48:08 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,0085 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In member function ‘std::string Reader::read(char*)’:
+../Reader.cpp:53:21: error: no matching function for call to ‘std::basic_istringstream<char>::read(std::string&)’
+     parser.read(line);
+                     ^
+../Reader.cpp:53:21: note: candidate is:
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from ../Reader.h:10,
+                 from ../Reader.cpp:8:
+/usr/include/c++/4.8/istream:486:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::read(std::basic_istream<_CharT, _Traits>::char_type*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::char_type = char; std::streamsize = long int]
+       read(char_type* __s, streamsize __n);
+       ^
+/usr/include/c++/4.8/istream:486:7: note:   candidate expects 2 arguments, 1 provided
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:75:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:48:51 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,017 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In member function ‘std::string Reader::read(char*)’:
+../Reader.cpp:53:30: error: redeclaration of ‘std::istringstream parser’
+     istringstream parser(line);
+                              ^
+../Reader.cpp:44:19: error: ‘std::istringstream parser’ previously declared here
+     istringstream parser(line);
+                   ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:75:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:50:07 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,0061 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:75:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+Finished building: ../Reader.cpp
+ 
+Building file: ../pdflib.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"pdflib.d" -MT"pdflib.d" -o "pdflib.o" "../pdflib.cpp"
+In file included from ../pdflib.cpp:27:0:
+../pdflib.hpp:25:20: fatal error: pdflib.h: Aucun fichier ou dossier de ce type
+ #include "pdflib.h"
+                    ^
+compilation terminated.
+make: *** [pdflib.o] Erreur 1
+17:56:04 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,009 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp:69:25: error: no ‘std::string Reader::toString()’ member function declared in class ‘Reader’
+ string Reader::toString() {
+                         ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:86:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+In file included from ../Reader.cpp:8:0:
+../Reader.h:33:14: error: ‘std::string Reader::toString’ is protected
+  std::string toString;
+              ^
+../Reader.cpp:88:15: error: within this context
+  cout << r -> toString() << endl;
+               ^
+../Reader.cpp:88:24: error: no match for call to ‘(std::string {aka std::basic_string<char>}) ()’
+  cout << r -> toString() << endl;
+                        ^
+make: *** [Reader.o] Erreur 1
+17:56:23 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,017 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp:69:25: error: no ‘std::string Reader::toString()’ member function declared in class ‘Reader’
+ string Reader::toString() {
+                         ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:86:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+../Reader.cpp:88:24: error: no match for call to ‘(std::string {aka std::basic_string<char>}) ()’
+  cout << r -> toString() << endl;
+                        ^
+make: *** [Reader.o] Erreur 1
+17:56:34 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,019 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp:69:25: error: no ‘std::string Reader::toString()’ member function declared in class ‘Reader’
+ string Reader::toString() {
+                         ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:86:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+../Reader.cpp:88:24: error: no match for call to ‘(std::string {aka std::basic_string<char>}) ()’
+  cout << r -> toString() << endl;
+                        ^
+make: *** [Reader.o] Erreur 1
+17:56:44 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,013 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp:69:25: error: no ‘std::string Reader::toString()’ member function declared in class ‘Reader’
+ string Reader::toString() {
+                         ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:86:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+../Reader.cpp:88:24: error: no match for call to ‘(std::string {aka std::basic_string<char>}) ()’
+  cout << r -> toString() << endl;
+                        ^
+make: *** [Reader.o] Erreur 1
+17:56:51 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,023 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In member function ‘std::string Reader::toString()’:
+../Reader.cpp:71:18: error: range-based ‘for’ loops are not allowed in C++98 mode
+  for (string s : names) {
+                  ^
+../Reader.cpp:74:18: error: range-based ‘for’ loops are not allowed in C++98 mode
+  for (double d : values) {
+                  ^
+../Reader.cpp:75:22: error: invalid operands of types ‘double’ and ‘const char [2]’ to binary ‘operator+’
+   vectorContent+= (d+" ");
+                      ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:86:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:58:42 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « objects.mk » a une date de modification 0,0096 dans le futur
+Building file: ../CircularGrapher.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"CircularGrapher.d" -MT"CircularGrapher.d" -o "CircularGrapher.o" "../CircularGrapher.cpp"
+Finished building: ../CircularGrapher.cpp
+ 
+Building file: ../Grapher.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Grapher.d" -MT"Grapher.d" -o "Grapher.o" "../Grapher.cpp"
+Finished building: ../Grapher.cpp
+ 
+Building file: ../HistoGrapher.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"HistoGrapher.d" -MT"HistoGrapher.d" -o "HistoGrapher.o" "../HistoGrapher.cpp"
+Finished building: ../HistoGrapher.cpp
+ 
+Building file: ../PointCloudGrapher.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"PointCloudGrapher.d" -MT"PointCloudGrapher.d" -o "PointCloudGrapher.o" "../PointCloudGrapher.cpp"
+Finished building: ../PointCloudGrapher.cpp
+ 
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In member function ‘std::string Reader::toString()’:
+../Reader.cpp:75:22: error: invalid operands of types ‘double’ and ‘const char [2]’ to binary ‘operator+’
+   vectorContent+= (d+" ");
+                      ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:86:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:58:57 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,016 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In member function ‘std::string Reader::toString()’:
+../Reader.cpp:75:22: error: invalid operands of types ‘double’ and ‘const char [2]’ to binary ‘operator+’
+   vectorContent+= (d+" ");
+                      ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:86:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+17:59:18 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,017 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In member function ‘std::string Reader::toString()’:
+../Reader.cpp:75:22: error: invalid operands of types ‘double’ and ‘const char [2]’ to binary ‘operator+’
+   vectorContent+= (d+" ");
+                      ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:86:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+18:00:41 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,018 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In member function ‘std::string Reader::toString()’:
+../Reader.cpp:75:22: error: invalid operands of types ‘double’ and ‘const char [2]’ to binary ‘operator+’
+   vectorContent+= (d+" ");
+                      ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:86:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1

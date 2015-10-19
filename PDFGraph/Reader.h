@@ -1,0 +1,42 @@
+/*
+ * Reader.h
+ *
+ *  Created on: 19 oct. 2015
+ *      Author: E104607D
+ */
+
+#ifndef READER_H_
+#define READER_H_
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <sstream>
+/**
+ * \class Reader
+ * \brief reads a file and gather informations to be written in the PDF afterward
+ */
+class Reader {
+public:
+	Reader();
+	//void parse(std::string textOfTheFile);
+
+	/**
+	 * \fn Method reading the parameterized file and parsing it to get the informations
+	 * \param char* filename
+	 * \return void
+	 */
+	std::string read(char* file);
+	std::string toString();
+	virtual ~Reader();
+
+protected:
+
+	std::string title;
+	std::string subtitle;
+	std::string note;
+	std::vector<std::string> names;
+	std::vector<double> values;
+};
+
+#endif /* READER_H_ */

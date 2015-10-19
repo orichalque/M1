@@ -1,0 +1,18 @@
+18:00:41 **** Incremental Build of configuration Debug for project PDFGraph ****
+make all 
+make: AVERTISSEMENT: fichier « subdir.mk » a une date de modification 0,018 dans le futur
+Building file: ../Reader.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Reader.d" -MT"Reader.d" -o "Reader.o" "../Reader.cpp"
+../Reader.cpp: In member function ‘std::string Reader::toString()’:
+../Reader.cpp:75:22: error: invalid operands of types ‘double’ and ‘const char [2]’ to binary ‘operator+’
+   vectorContent+= (d+" ");
+                      ^
+../Reader.cpp: In function ‘int main()’:
+../Reader.cpp:86:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char* file = "tmp";
+               ^
+make: *** [Reader.o] Erreur 1
+
+18:00:42 Build Finished (took 563ms)
+
