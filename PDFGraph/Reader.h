@@ -1,8 +1,12 @@
-/*
- * Reader.h
+/**
+ * \file Reader.h
+ * \brief File reading class declaration
+ * \author T. Béziers la Fosse
+ * \version 0.1
+ * \date 20/10/2015
  *
- *  Created on: 19 oct. 2015
- *      Author: E104607D
+ * Class used to read a file and extract datas
+ *
  */
 
 #ifndef READER_H_
@@ -18,25 +22,41 @@
  */
 class Reader {
 public:
+        /**
+         * \brief Reader constructor, initializing attribute 
+         *        
+         */
 	Reader();
-	//void parse(std::string textOfTheFile);
 
-	/**
-	 * \fn Method reading the parameterized file and parsing it to get the informations
-	 * \param char* filename
-	 * \return void
-	 */
+        /**
+         * \fn string Reader::read(char* fileName) 
+         * \brief Function used to read the file and extract informations 
+         * \param fileName the name of the file to be read
+         * \return String containing the text readen 
+         */
 	std::string read(char* file);
+        
+        /**
+        *  \fn string Reader::toString()
+        *  \brief Read the attribute of the object and concatenates them in a string to be displayed
+        *  \param none
+        *  \return The string containing all the informations in the attributes
+        */
 	std::string toString();
+        
+        /**
+         * \fn virtual ~Reader();
+         * \brief reader destructor
+         */
 	virtual ~Reader();
 
 protected:
 
-	std::string title;
-	std::string subtitle;
-	std::string note;
-	std::vector<std::string> names;
-	std::vector<double> values;
+	std::string title; /*! Title of the graph to be displayed later*/
+	std::string subtitle; /*! Subtitle of the graph to be displayed later*/
+	std::string note; /*! Some optionnal note about the graph to be displayed later*/
+	std::vector<std::string> names; /*! First row of the datas in the file readen*/
+	std::vector<double> values; /*! Second row with the data corresponding to the name*/
 };
 
 #endif /* READER_H_ */

@@ -1,16 +1,20 @@
-/*
- * Reader.cpp
+/**
+ * \file Reader.cpp
+ * \brief Class implementation
+ * \author T. Béziers la Fosse
+ * \version 0.1
+ * \date 20/10/2015
  *
- *  Created on: 19 oct. 2015
- *      Author: E104607D
+ * Class used to read a file and extract datas
+ *
  */
-
 #include "Reader.h"
 using namespace std;
 
 Reader::Reader():title(""), subtitle(""), note("") {
 	// TODO Auto-generated constructor stub
 }
+
 
 string Reader::read(char* fileName) {
 	ifstream file (fileName);
@@ -51,8 +55,10 @@ string Reader::read(char* fileName) {
 				}
 				getline (file, line);
 				istringstream parser2(line);
+                                
 				while (parser2  >> value) {
 					values.push_back(value);
+                                        cout << value << endl;
 				}
 			}
 		}
@@ -66,15 +72,15 @@ string Reader::read(char* fileName) {
 
 }
 
+
 string Reader::toString() {
 	string vectorContent("");
 	ostringstream strs;
 	for (string s : names) {
 		vectorContent+= (s+" ");
 	}
-	for (double d : values) {
-		strs << d;
-		vectorContent+= (strs.str()+" ");
+	for (double d : values) {         
+		vectorContent+= (to_string(d)+" ");
 	}
 	return (title+" "+subtitle+" "+note+" "+vectorContent);
 }

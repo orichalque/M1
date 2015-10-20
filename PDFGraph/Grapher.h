@@ -1,10 +1,13 @@
-/*
- * grapher.h
+/**
+ * \file Grapher.h
+ * \brief Abstract class Grapher definition
+ * \author T. Béziers la Fosse
+ * \version 0.1
+ * \date 20/10/2015
  *
- *  Created on: 19 oct. 2015
- *      Author: E104607D
+ * Mother class of the Graph drawing classes
+ *
  */
-
 #ifndef GRAPHER_H_
 #define GRAPHER_H_
 
