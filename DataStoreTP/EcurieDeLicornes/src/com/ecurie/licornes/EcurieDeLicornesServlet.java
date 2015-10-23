@@ -23,18 +23,21 @@ public class EcurieDeLicornesServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
 		
+		
 		resp.setContentType("text/plain");
 		resp.getWriter().println("Hello, world");
+		
 		DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
 		
 		Filter tailleMin = new FilterPredicate("taille", FilterOperator.GREATER_THAN, 100);
-		Filter tailleMax = new FilterPredicate("taille", FilterOperator.LESS_THAN, 120);
-		Filter compositeFilter = CompositeFilterOperator.and(tailleMin, tailleMax);
-		Query q = new Query().setFilter(compositeFilter);
+		/*Filter tailleMax = new FilterPredicate("taille", FilterOperator.LESS_THAN, 120);
+		Filter compositeFilter = CompositeFilterOperator.and(tailleMin, tailleMax); */
+		Query q = new Query("licorne").setFilter(tailleMin);
 		PreparedQuery pq = datastore.prepare(q); 
-		
+
 		for (Entity result : pq.asIterable()){
-			resp.getWriter().println(result.getProperty("Identifiant"));
+			resp.getWriter().println((String) result.getProperty("taille"));
 		}
-	}
+		resp.getWriter().println("fin");
+	} 
 }
