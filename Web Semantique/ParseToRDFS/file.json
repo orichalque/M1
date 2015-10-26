@@ -1,0 +1,4 @@
+[{"datasetid": "fa-nat-tranches", "recordid": "8d9f17fe1ba085ac84940cbd7557273b9e5254f3", "fields": {"nb_enfa": 48, "tranche": "c-]100;250] kVA", "mw_enfa": 9.4, "typeprod": "Bio \u00e9nergie"}, "record_timestamp": "2015-08-03T15:20:17+02:00"},
+{"datasetid": "fa-nat-tranches", "recordid": "71a402e79057ab3b54b2e59ae64e4e568ee4468a", "fields": {"nb_enfa": 4, "tranche": "a-]0;3] kVA", "mw_enfa": 0.0, "typeprod": "Eolien"}, "record_timestamp": "2015-08-03T15:20:17+02:00"},
+{"datasetid": "fa-nat-tranches", "recordid": "8441ccbe0397aa26aa5490372e6640aa957351a0", "fields": {"nb_enfa": 4, "tranche": "g-]100;250] kVA", "mw_enfa": 12.6, "typeprod": "Eolien"}, "record_timestamp": "2015-08-03T15:20:17+02:00"},
+{"datasetid": "fa-nat-tranches", "recordid": "7d25d87f9ee22bcb0a8c6411795938bb36999163", "fields": {"nb_enfa": 209, "tranche": "l-]5;10] MW", "mw_enfa": 1816.1, "typeprod": "Eolien"}, "record_timestamp": "2015-08-03T15:20:17+02:00"}]
