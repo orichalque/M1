@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<item value="480,544" key="UserLibraryLoadSaveDialog.size"/>
 	<item value="filter_imports;" key="filters_last_used"/>
-	<item value="/comptes/E104607D/Desktop" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="/comptes/E104607D/Desktop/M1/DiceLauncher/DiceLaunch/src" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="jdk1.7.0_67" key="org.eclipse.jdt.ui.last.selected.project.jre"/>
 	<item value="0" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
 	<item value="/comptes/E104607D/Desktop/M1/Software Texting/TP2" key="org.eclipse.jdt.ui.last.external.project"/>
@@ -10,7 +10,7 @@
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item value="0" key="pageIndex"/>
+		<item value="2" key="pageIndex"/>
 	</section>
 	<section name="JavaSearchPage">
 		<item value="false" key="CASE_SENSITIVE"/>

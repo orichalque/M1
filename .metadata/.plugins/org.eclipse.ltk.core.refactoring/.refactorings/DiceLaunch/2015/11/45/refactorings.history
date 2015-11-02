@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;DiceLaunch&apos;&#x0A;- Original project: &apos;DiceLaunch&apos;&#x0A;- Original elements:&#x0A;     appengine-api-labs.jar&#x0A;     appengine-endpoints-deps.jar&#x0A;     appengine-endpoints.jar" description="Delete elements" element1="war/WEB-INF/lib/appengine-endpoints.jar" element2="war/WEB-INF/lib/appengine-api-labs.jar" element3="war/WEB-INF/lib/appengine-endpoints-deps.jar" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="3" stamp="1446467402600" subPackages="false" version="1.0"/>
+</session>
