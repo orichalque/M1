@@ -1,0 +1,20 @@
+package JSONParser;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class JSONObject {
+	String json;
+	
+	public JSONObject(String s) {
+		json = s;
+	}
+	
+	public static Object getValue(String identifier) {
+		
+		Pattern pattern = Pattern.compile(identifier);
+		Matcher result;
+		result = pattern.matcher(json);
+		return null;
+	}
+}

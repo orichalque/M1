@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="1044" key="dialogWidth"/>
-		<item value="650" key="dialogHeight"/>
+		<item value="994" key="dialogWidth"/>
+		<item value="556" key="dialogHeight"/>
 		<list key="orderedProviders">
 			<item value="org.eclipse.e4.ui.parts"/>
 			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textArray">
+			<item value="consol"/>
 			<item value="console"/>
 			<item value="junit"/>
 		</list>
@@ -16,20 +17,13 @@
 			<item value="org.eclipse.jdt.junit.ResultView"/>
 		</list>
 		<list key="textEntries">
-			<item value="1"/>
+			<item value="2"/>
 			<item value="1"/>
 		</list>
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="0" key="DIALOG_Y_ORIGIN"/>
-		<item value="26" key="DIALOG_X_ORIGIN"/>
-	</section>
-	<section name="InstallationDialogSettings">
-		<item value="688" key="DIALOG_WIDTH"/>
-		<item value="0" key="DIALOG_Y_ORIGIN"/>
-		<item value="782" key="DIALOG_HEIGHT"/>
-		<item value="115" key="DIALOG_X_ORIGIN"/>
-		<item value="1|Ubuntu|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="-17" key="DIALOG_Y_ORIGIN"/>
+		<item value="27" key="DIALOG_X_ORIGIN"/>
 	</section>
 	<section name="NewWizardAction">
 		<item value="org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
@@ -37,6 +31,13 @@
 			<item value="org.eclipse.jdt.ui.java"/>
 			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.junit"/>
 		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item value="688" key="DIALOG_WIDTH"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="115" key="DIALOG_X_ORIGIN"/>
+		<item value="782" key="DIALOG_HEIGHT"/>
+		<item value="1|Ubuntu|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="ImportExportAction">
 		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>

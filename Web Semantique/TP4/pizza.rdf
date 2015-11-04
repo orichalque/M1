@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#hasTopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#hasTopping"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#cheeseTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#cheeseTopping"/>
+    
+
+
+    <!-- http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#margheritaPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#margheritaPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#pizza"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#hasTopping"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#mozarellaTopping"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#hasTopping"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#tomatoTopping"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#hasTopping"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#mozarellaTopping"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#tomatoTopping"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#mozarellaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#mozarellaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#cheeseTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#pizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#pizza"/>
+    
+
+
+    <!-- http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#tomatoTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#tomatoTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#vegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#vegetableTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#vegetableTopping"/>
+    
+
+
+    <!-- http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#vegetarianPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#vegetarianPizza">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#hasTopping"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#cheeseTopping"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#vegetableTopping"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/e104607d/ontologies/2015/10/untitled-ontology-2#pizza"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,38 @@
+\documentclass{article}
+\parskip 0pt
+\parindent 0pt
+\oddsidemargin 0cm
+\textwidth 19cm
+\begin{document}
+
+\subsection*{Classes}
+
+\subsubsection*{cheeseTopping}
+
+\subsubsection*{margheritaPizza}
+
+margheritaPizza~\ensuremath{\sqsubseteq}~pizza~
+
+margheritaPizza~\ensuremath{\sqsubseteq}~\ensuremath{\exists}~hasTopping~mozarellaTopping~\ensuremath{\sqcap}~\ensuremath{\exists}~hasTopping~tomatoTopping~\ensuremath{\sqcap}~\ensuremath{\forall}~hasTopping~(mozarellaTopping~\ensuremath{\sqcup}~tomatoTopping)~
+
+\subsubsection*{mozarellaTopping}
+
+mozarellaTopping~\ensuremath{\sqsubseteq}~cheeseTopping~
+
+\subsubsection*{pizza}
+
+\subsubsection*{tomatoTopping}
+
+tomatoTopping~\ensuremath{\sqsubseteq}~vegetableTopping~
+
+\subsubsection*{vegetableTopping}
+
+\subsubsection*{vegetarianPizza}
+
+vegetarianPizza~\ensuremath{\equiv}~\ensuremath{\forall}~hasTopping~(cheeseTopping~\ensuremath{\sqcup}~vegetableTopping)
+
+vegetarianPizza~\ensuremath{\sqsubseteq}~pizza~
+
+\section*{Object properties}\subsubsection*{hasTopping}
+
+\section*{Data properties}\section*{Individuals}\section*{Datatypes}\end{document}

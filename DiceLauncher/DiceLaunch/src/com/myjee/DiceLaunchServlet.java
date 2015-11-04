@@ -1,10 +1,11 @@
 package com.myjee;
 
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
+
+import JSONParser.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 
@@ -13,29 +14,19 @@ public class DiceLaunchServlet extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			  throws ServletException, IOException {
 		System.out.println("Bonjour");
-		StringBuffer sb = new StringBuffer();
-		
-		try {
-			BufferedReader reader = request.getReader();
-			String line = null;
- 			while ((line = reader.readLine()) != null) {
-				sb.append(line);
-			}
-		} catch (Exception e){
-			e.printStackTrace();
-		}
-		 
-		JSONParser parser = new JSONParser();
-		JSONObject joUser = null; 
-		try { 
-			joUser = (JSONObject) parser.parse(sb.toString());
-		} catch (Exception e) { e.printStackTrace(); }
-		
-		Person p = new Person();
-		p.setName( (String) joUser.get("name"));
-		p.setScore( (int) joUser.get("score"));
-		System.out.println(p.getName());
+		StringBuffer jb = new StringBuffer();
+		  String line = null;
+		  try {
+		    BufferedReader reader = request.getReader();
+		    while ((line = reader.readLine()) != null)
+		      jb.append(line);
+		  } catch (Exception e) { /*report an error*/ 
 			  // you can handle jsonString by parsing it to a Java object. 
 			  // For this purpose, you can use one of the Json-Java parsers like gson**.
+		  }
+		  System.out.println(jb.toString());
+		  JSONObject json = new JSONObject(jb.toString());
+		  json.getValue("name");
+		  json.getValue("score");
 	}
 }

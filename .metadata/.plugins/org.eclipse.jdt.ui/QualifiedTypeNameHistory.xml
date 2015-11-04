@@ -30,4 +30,9 @@
 <fullyQualifiedTypeName name="com.google.appengine.api.datastore.DatastoreServiceFactory"/>
 <fullyQualifiedTypeName name="com.google.appengine.api.datastore.Entity"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
+<fullyQualifiedTypeName name="org.json.simple.parser.JSONParser"/>
+<fullyQualifiedTypeName name="com.google.appengine.labs.repackaged.org.json.JSONObject"/>
+<fullyQualifiedTypeName name="com.google.appengine.labs.repackaged.org.json.JSONWriter"/>
+<fullyQualifiedTypeName name="com.google.appengine.repackaged.com.google.gson.JsonParser"/>
 </qualifiedTypeNameHistroy>
