@@ -1,9 +1,0 @@
-package JSONParser;
-
-public class JSONObject {
-	String json;
-	public JSONObject(String s) {
-		json = s;
-	}
-	public static getValue
-}

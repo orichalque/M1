@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="filter_imports;" key="filters_last_used"/>
 	<item value="480,544" key="UserLibraryLoadSaveDialog.size"/>
+	<item value="filter_imports;" key="filters_last_used"/>
 	<item value="/comptes/E104607D/Documents" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="jdk1.7.0_67" key="org.eclipse.jdt.ui.last.selected.project.jre"/>
 	<item value="0" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
@@ -20,10 +20,10 @@
 			<item value="11" key="includeMask"/>
 			<item value="2" key="limitTo"/>
 			<item value="0" key="scope"/>
-			<item value="class" key="pattern"/>
 			<item value="" key="javaElement"/>
-			<item value="0" key="searchFor"/>
+			<item value="class" key="pattern"/>
 			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
 			<item value="false" key="isCaseSensitive"/>
 			<list key="workingSets">
 			</list>
@@ -46,7 +46,7 @@
 		<item value="true" key="expanded0"/>
 	</section>
 	<section name="ClasspathContainerSelectionPage">
-		<item value="11" key="index"/>
+		<item value="7" key="index"/>
 	</section>
 	<section name="JavaBuildConfigurationBlock">
 		<item value="false" key="expanded2"/>
@@ -75,8 +75,8 @@
 		<section name="DialogBoundsSettings">
 			<item value="600" key="DIALOG_WIDTH"/>
 			<item value="83" key="DIALOG_Y_ORIGIN"/>
-			<item value="500" key="DIALOG_HEIGHT"/>
 			<item value="-40" key="DIALOG_X_ORIGIN"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
 			<item value="1|Ubuntu|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		</section>
 	</section>
@@ -84,13 +84,13 @@
 	</section>
 	<section name="JavaElementSearchActions">
 	</section>
+	<section name="NewClassWizardPage">
+		<item value="false" key="create_constructor"/>
+		<item value="false" key="create_unimplemented"/>
+	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="1" key="updateSimilarElementsMatchStrategy"/>
 		<item value="false" key="updateTextualMatches"/>
 		<item value="false" key="updateSimilarElements"/>
-	</section>
-	<section name="NewClassWizardPage">
-		<item value="false" key="create_constructor"/>
-		<item value="false" key="create_unimplemented"/>
 	</section>
 </section>

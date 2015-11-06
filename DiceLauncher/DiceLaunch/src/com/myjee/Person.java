@@ -36,4 +36,11 @@ public class Person {
 	public void setScore(int score) {
 		this.score = score;
 	}
+	
+	/**
+	 * @return string containing datas
+	 */
+	public String toString() {
+		return "Nom: "+name+"; score: "+score;
+	}
 }

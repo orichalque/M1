@@ -1,11 +1,9 @@
+
 package com.myjee;
-
-
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 
 import JSONParser.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 
@@ -13,7 +11,6 @@ import java.io.IOException;
 public class DiceLaunchServlet extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			  throws ServletException, IOException {
-		System.out.println("Bonjour");
 		StringBuffer jb = new StringBuffer();
 		  String line = null;
 		  try {
@@ -24,9 +21,12 @@ public class DiceLaunchServlet extends HttpServlet {
 			  // you can handle jsonString by parsing it to a Java object. 
 			  // For this purpose, you can use one of the Json-Java parsers like gson**.
 		  }
-		  System.out.println(jb.toString());
+		  
 		  JSONObject json = new JSONObject(jb.toString());
-		  json.getValue("name");
-		  json.getValue("score");
+		  System.out.println(jb.toString());
+		  Person p = new Person();
+		  p.setName(json.getValue("name"));
+		  p.setScore(Integer.parseInt(json.getValue("score")));
+		  System.out.println(p.toString());
 	}
 }

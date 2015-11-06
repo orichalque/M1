@@ -1,0 +1,15 @@
+package fr.univnantes.cta.test;
+
+import junit.framework.TestCase;
+
+public class AngleImplTest extends TestCase {
+	protected double arg1;
+	
+	public AngleImplTest(double arg) {
+		arg1 = arg;
+	}
+
+	protected static void tearDownAfterClass() throws Exception {
+	}
+
+}

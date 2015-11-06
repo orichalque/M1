@@ -35,4 +35,12 @@
 <fullyQualifiedTypeName name="com.google.appengine.labs.repackaged.org.json.JSONObject"/>
 <fullyQualifiedTypeName name="com.google.appengine.labs.repackaged.org.json.JSONWriter"/>
 <fullyQualifiedTypeName name="com.google.appengine.repackaged.com.google.gson.JsonParser"/>
+<fullyQualifiedTypeName name="fr.univnantes.cta.impl.AngleImpl"/>
+<fullyQualifiedTypeName name="fr.univnantes.cta.Angle"/>
+<fullyQualifiedTypeName name="fr.univnantes.cta.Airport"/>
+<fullyQualifiedTypeName name="fr.univnantes.cta.impl.AirportImpl"/>
+<fullyQualifiedTypeName name="fr.univnantes.cta.Airplane"/>
+<fullyQualifiedTypeName name="fr.univnantes.cta.impl.AirplaneImpl"/>
+<fullyQualifiedTypeName name="fr.univnantes.cta.AirplaneOverload"/>
+<fullyQualifiedTypeName name="fr.univnantes.cta.IncompatibleAirway"/>
 </qualifiedTypeNameHistroy>

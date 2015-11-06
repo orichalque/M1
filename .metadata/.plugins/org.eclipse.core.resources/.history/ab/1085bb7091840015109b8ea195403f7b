@@ -1,0 +1,53 @@
+package fr.univnantes.cta.test;
+
+import static org.junit.Assert.*;
+
+import java.util.Arrays;
+import java.util.Collection;
+
+import org.junit.AfterClass;
+import org.junit.Test;
+import org.junit.runners.Parameterized.Parameters;
+
+import fr.univnantes.cta.IncompatibleAirway;
+
+public class IncompatibleAirwayTest {
+	protected double arg1;
+	protected double arg2;
+	
+	public IncompatibleAirwayTest(double a1, double a2) {
+		arg1=a1;
+		arg2=a2;
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+	}
+	
+	/**
+	 * 
+	 * @return Collection
+	 */
+	@Parameters (name= "{index}: {0}")
+	public static Collection data() {
+		Object[][] data = {
+				{0., 0.},
+				{-10., 10.},
+				{10., -10.},
+				{0., 0.},
+				
+		};
+		return Arrays.asList(data);
+	}
+	
+	@Test(expected = Exception.class)
+	public void test() throws Exception {
+		throw new IncompatibleAirway(arg1, arg2);
+	}
+	
+	@Test(expected = Exception.class)
+	public void test2() throws Exception {
+		throw new IncompatibleAirway());
+	}
+
+}

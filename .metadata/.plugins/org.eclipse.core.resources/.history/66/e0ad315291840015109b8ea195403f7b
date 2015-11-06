@@ -1,0 +1,28 @@
+package fr.univnantes.cta.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.AfterClass;
+import org.junit.Test;
+
+import fr.univnantes.cta.IncompatibleAirway;
+
+public class IncompatibleAirwayTest {
+	protected double arg1;
+	protected double arg2;
+	
+	public IncompatibleAirwayTest(double a1, double a2) {
+		arg1=a1;
+		arg2=a2;
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+	}
+
+	@Test(expected = Exception.class)
+	public void test() throws Exception {
+		throw new IncompatibleAirway(arg1, arg2);
+	}
+
+}

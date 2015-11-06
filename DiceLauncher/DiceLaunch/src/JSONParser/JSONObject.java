@@ -5,28 +5,26 @@ import java.util.regex.Pattern;
 
 public class JSONObject {
 	String json;
-	
 	public JSONObject(String s) {
 		json = s;
-		json = json.replace("\"", "");
 		json = json.replace("{", "");
 		json = json.replace("}", "");
+		
 	}
 	
-	public Object getValue(String identifier) {
-		String regex = "("+identifier+"(.*,))|(,("+identifier+"):.*$)";
-		System.out.println(regex);
+	public String getValue(String identifier) {
+		String regex = "\""+identifier+"\""+":(\"){0,1}[\\w]+(\"){0,1}";
 		String jsonResult = "";
 		Pattern pattern = Pattern.compile(regex);
-		Matcher result;
+		Matcher result; 
 		result = pattern.matcher(json);
 		while (result.find()) {
 			jsonResult = result.group();
-			jsonResult = jsonResult.replace(",", "");
-			jsonResult = jsonResult.replace(identifier+":", "");
-			System.out.println(jsonResult);
+			jsonResult = jsonResult.replace("\""+identifier+"\"", "");
+			jsonResult = jsonResult.replace("\"", "");
+			jsonResult = jsonResult.replace(":", "");
 		}
-		return null;
+		return jsonResult;
 	}
 
 	public String getJson() {

@@ -1,0 +1,14 @@
+package fr.univnantes.cta.test;
+
+import junit.framework.TestCase;
+
+public class AngleImplTest extends TestCase {
+
+	public AngleImplTest(String name) {
+		super(name);
+	}
+
+	protected static void tearDownAfterClass() throws Exception {
+	}
+
+}
