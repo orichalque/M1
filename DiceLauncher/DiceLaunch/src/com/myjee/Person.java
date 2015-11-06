@@ -1,8 +1,12 @@
 package com.myjee;
 
+import com.googlecode.objectify.annotation.*;
+
+@Entity
+@Index
 public class Person {
-	protected String name;
-	protected int score;
+	public int score;
+	@Id public String name;
 	
 	public Person() {
 		name = "";

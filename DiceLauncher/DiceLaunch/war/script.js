@@ -1,4 +1,3 @@
-
 (function() {
   var app = angular.module('DiceLauncher', []);
   app.controller("DiceController", function($scope, $http) {
@@ -8,6 +7,14 @@
     ctrl.name = 0;
     ctrl.nbOfThrows = 0;
     ctrl.name="";
+    ctrl.submited = false;   
+    ctrl.submit = function() {
+    	if (ctrl.submited == false) {
+    		ctrl.submited = true;
+    	} else {
+    		ctrl.submited = false;
+    	}
+    }    
     ctrl.throwDice = function() {
       if (ctrl.nbOfThrows < 10) {
         ctrl.nbOfThrows ++;
@@ -16,8 +23,8 @@
         }
       }
     }
-    
     ctrl.addScore = function(){
+    	ctrl.submited = true;
     	console.log(ctrl.name);
     	console.log(ctrl.score);
     	$scope.person = {};
