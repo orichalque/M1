@@ -21,9 +21,13 @@ public class ScoreDisplayServlet extends HttpServlet {
 	}
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			  throws ServletException, IOException {
-		List<Person> liste = ObjectifyService.ofy().load().type(Person.class).list();
+		List<Person> liste = ObjectifyService.ofy().load().type(Person.class).order("-score").limit(10).list();
 		PrintWriter out = response.getWriter();
-		out.println(liste.toString());
+		for (Person p : liste) {
+			out.println("<li>"+p.toString()+"</li>");
+			
+		}
+		
 		out.println("<form action=\"/\" ng-show=\"diceCtrl.submited == true\"><input type=\"submit\" value=\"Play Again\"></form>");
 		
 	}
