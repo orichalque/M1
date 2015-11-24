@@ -1,0 +1,194 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://myapp.appspot.com/_ah/api",
+  "name" : "websiteentityendpoint",
+  "version" : "v1",
+  "defaultVersion" : false,
+  "adapter" : {
+    "bns" : "https://myapp.appspot.com/_ah/spi",
+    "deadline" : 65.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "ownerDomain" : "mycompany.com",
+  "ownerName" : "mycompany.com",
+  "packagePath" : "services",
+  "methods" : {
+    "websiteentityendpoint.getWebSiteEntity" : {
+      "path" : "websiteentity/{id}",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "handiappnote.WebSiteEntityEndpoint.getWebSiteEntity",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "websiteentityendpoint.insertWebSiteEntity" : {
+      "path" : "websiteentity",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "handiappnote.WebSiteEntityEndpoint.insertWebSiteEntity",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "websiteentityendpoint.updateWebSiteEntity" : {
+      "path" : "websiteentity",
+      "httpMethod" : "PUT",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "handiappnote.WebSiteEntityEndpoint.updateWebSiteEntity",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "websiteentityendpoint.removeWebSiteEntity" : {
+      "path" : "websiteentity/{id}",
+      "httpMethod" : "DELETE",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "handiappnote.WebSiteEntityEndpoint.removeWebSiteEntity",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "empty"
+      }
+    },
+    "websiteentityendpoint.listWebSiteEntity" : {
+      "path" : "websiteentity",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "handiappnote.WebSiteEntityEndpoint.listWebSiteEntity",
+      "request" : {
+        "parameters" : {
+          "cursor" : {
+            "type" : "string",
+            "required" : false
+          },
+          "limit" : {
+            "type" : "int32",
+            "required" : false
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "WebSiteEntity" : {
+        "id" : "WebSiteEntity",
+        "type" : "object",
+        "properties" : {
+          "keyWord" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "url" : {
+            "type" : "string"
+          }
+        }
+      },
+      "CollectionResponse_WebSiteEntity" : {
+        "id" : "CollectionResponse_WebSiteEntity",
+        "type" : "object",
+        "properties" : {
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "WebSiteEntity"
+            }
+          },
+          "nextPageToken" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "methods" : {
+      "handiappnote.WebSiteEntityEndpoint.getWebSiteEntity" : {
+        "response" : {
+          "$ref" : "WebSiteEntity"
+        }
+      },
+      "handiappnote.WebSiteEntityEndpoint.insertWebSiteEntity" : {
+        "request" : {
+          "$ref" : "WebSiteEntity"
+        },
+        "response" : {
+          "$ref" : "WebSiteEntity"
+        }
+      },
+      "handiappnote.WebSiteEntityEndpoint.updateWebSiteEntity" : {
+        "request" : {
+          "$ref" : "WebSiteEntity"
+        },
+        "response" : {
+          "$ref" : "WebSiteEntity"
+        }
+      },
+      "handiappnote.WebSiteEntityEndpoint.removeWebSiteEntity" : {
+      },
+      "handiappnote.WebSiteEntityEndpoint.listWebSiteEntity" : {
+        "response" : {
+          "$ref" : "CollectionResponse_WebSiteEntity"
+        }
+      }
+    }
+  }
+}
