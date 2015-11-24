@@ -1,0 +1,18 @@
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Création du modèle Jena
+		Model model=ModelFactory.createDefaultModel();
+	    model.read(new FileInputStream(inputPath),null,"TTL");
+	    
+	    Scanner scan = new Scanner(new File(reqPath));
+	    String req = scan.useDelimiter("\\Z").next(); // récupération de la requête SPARQL
+	    scan.close();
+	    
+		Query query = QueryFactory.create(req);
+		QueryExecution qExe = QueryExecutionFactory.create(query, model);
+		ResultSet resultsRes = qExe.execSelect(); // récupération du résultat de la requête
+	}
+
+}

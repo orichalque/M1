@@ -1,0 +1,129 @@
+#include <iostream>
+#include <regex>
+#include <iterator>
+#include <fstream>
+#include <string>
+#include <vector>
+
+std::vector<std::string> id;
+std::vector<std::string> nb_enfa;
+std::vector<std::string> tranche;
+std::vector<std::string> mw_enfa;
+std::vector<std::string> typeprod;
+
+std::string domain = "notreNomDeDomaine";
+std::string adressDomain = "notreAdresseDeNomDeDomaine";
+
+std::string read(std::string file){
+  std::string fileString;
+  std::string line;
+  std::ifstream myfile (file.c_str());
+  if (myfile.is_open())
+  {
+    while ( getline (myfile,line) )
+    {
+      fileString += line;
+    }
+    myfile.close();
+  }
+  else {
+      std::cout << "Unable to open file";
+  }
+  return fileString;
+}
+
+std::string generateSpace(int i){
+    if(i <= 1){
+        return " ";
+    }else{
+        return " " + generateSpace(i - 1);
+    }
+}
+
+void write(){
+    std::string line = "";
+    int space;
+    std::ifstream f("file.ttl");
+    if (f.good()) {
+        f.close();
+        remove("file.ttl");
+
+    } else {
+        f.close();
+    }
+
+    std::ofstream myfile;
+    myfile.open("file.ttl");
+    int vecSize = id.size();
+    myfile << "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n";
+    myfile << "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n";
+    myfile << "@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n";
+    myfile << "@prefix " + domain + ": <" + adressDomain + "> .\n\n";
+
+    for(int i = 0; i < vecSize; ++i){
+        myfile << domain + ":" + id[i] + '\t' + domain + ":nb_enfa" + '\t' + '"' + nb_enfa[i] + '"' + "^^xsd:integer" + " ;\n";
+        space = domain.length() + id[i].length() + 1;
+        myfile << generateSpace(space) + '\t' + domain + ":tranche" + '\t' + '"' + tranche[i] + '"' + " ;\n";
+        myfile << generateSpace(space) + '\t' + domain + ":mw_enfa" + '\t' + '"' + mw_enfa[i] + '"' + "^^xsd:double" + " ;\n";
+        myfile << generateSpace(space) + '\t' + domain + ":typeprod" + '\t' + '"' + typeprod[i] + '"' + " .";
+
+        if (i != vecSize - 1){
+            myfile << "\n\n";
+        }
+    }
+    myfile.close();
+}
+
+int main()
+{
+    // variables used to work on each json blocks
+    std::string s = read("file.json");
+    std::regex words_regex("\"datasetid\".*\\}(,|\\])");
+    auto words_begin = std::sregex_iterator(s.begin(), s.end(), words_regex);
+    auto words_end = std::sregex_iterator();
+
+    // variables used to work on each block's fields
+    std::string innerS;
+    std::regex innerWords_regex("");
+
+    for (std::sregex_iterator i = words_begin; i != words_end; ++i) {
+        std::smatch match = *i;
+        std::string match_str = match.str();
+
+        innerWords_regex.assign("\"recordid\"[^,]*(\")");
+        auto innerWords_begin = std::sregex_iterator(match_str.begin(), match_str.end(), innerWords_regex);
+        auto innerWords_end = std::sregex_iterator();
+        for (std::sregex_iterator j = innerWords_begin; j != innerWords_end; ++j) {
+            std::smatch innerMatch = *j;
+            innerS = innerMatch.str();
+            innerS = innerS.substr(13,innerS.length() - 14); // ici on a l'id
+            id.push_back(innerS);
+        }
+
+        innerWords_regex.assign("\\{[^\\}]*\\}");
+        innerWords_begin = std::sregex_iterator(match_str.begin(), match_str.end(), innerWords_regex);
+        innerWords_end = std::sregex_iterator();
+        for (std::sregex_iterator j = innerWords_begin; j != innerWords_end; ++j) {
+            std::smatch innerMatch = *j;
+            innerS = innerMatch.str();
+            innerS = innerS.substr(1,innerS.length() - 2);
+
+            std::stringstream test(innerS);
+            std::string segment;
+            std::vector<std::string> seglist;
+
+            while(std::getline(test, segment, ','))
+            {
+                seglist.push_back(segment); // dans seglist on a chaque champs avec leur identifiants
+            }
+            nb_enfa.push_back(seglist[0].substr(11,seglist[0].length() - 11)); // on met les champs dans leur vecteur sans leurs identifiants
+            tranche.push_back(seglist[1].substr(13,seglist[1].length() - 14));
+            mw_enfa.push_back(seglist[2].substr(12,seglist[2].length() - 12));
+            typeprod.push_back(seglist[3].substr(14,seglist[3].length() - 15));
+        }
+    }
+
+    write();
+
+    return 0;
+}

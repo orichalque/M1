@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+	<servlet>
+		<servlet-name>listPetition</servlet-name>
+		<servlet-class>com.TPWebNCloud.listPetitionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>listPetition</servlet-name>
+		<url-pattern>/listpetition</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>createPetition</servlet-name>
+		<servlet-class>com.TPWebNCloud.createPetitionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createPetition</servlet-name>
+		<url-pattern>/createpetition</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>TPNoteWebNCloud</servlet-name>
+		<servlet-class>com.TPWebNCloud.TPNoteWebNCloudServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TPNoteWebNCloud</servlet-name>
+		<url-pattern>/tpnotewebncloud</url-pattern>
+	</servlet-mapping>
+	
+	<filter>
+        <filter-name>ObjectifyFilter</filter-name>
+        <filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
+	</filter>
+	<filter-mapping>
+        <filter-name>ObjectifyFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

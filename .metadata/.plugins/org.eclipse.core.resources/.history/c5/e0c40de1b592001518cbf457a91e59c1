@@ -1,0 +1,45 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Scanner;
+
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+
+
+public class main {
+
+    public static void main(String args[]) throws IOException {
+    	
+    	String inputPath = "file.ttl"; //DataSet rdf
+    	String reqPath = "req.qr"; //Request
+    	
+    	CSVToTTL csvtottl = new CSVToTTL("file.csv");
+    	csvtottl.read();
+    	String[] types = {"^^xsd:String","^^xsd:String","^^xsd:Integer","^^xsd:Double"};
+    	csvtottl.setTypes(types);
+    	csvtottl.writeCSV(inputPath);
+    	System.out.println("Success");
+    	
+    	//TODO inputPath rePath
+    	// Création du modèle Jena
+		Model model=ModelFactory.createDefaultModel();
+	    model.read(new FileInputStream(inputPath),null,"TTL");
+	    
+	    //Ajout du modèle
+	    Scanner scan = new Scanner(new File(reqPath));
+	    String req = scan.useDelimiter("\\Z").next(); // récupération de la requête SPARQL
+	    scan.close();
+	    
+	    //Lecture & Execution de la requête
+		Query query = QueryFactory.create(req);
+		QueryExecution qExe = QueryExecutionFactory.create(query, model);
+		ResultSet resultsRes = qExe.execSelect(); // récupération du résultat de la requête
+    }
+
+}

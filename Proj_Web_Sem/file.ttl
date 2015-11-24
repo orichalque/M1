@@ -1,0 +1,324 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <no_adress_domain> .
+:0	:typeProd	"Photovoltaïque"^^xsd:String;
+ 	:pId	"b"^^xsd:String;
+	:pMin	"1"^^xsd:Double;
+	:pMax	"3"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+ 	:nbInstall	"4681"^^xsd:Integer;
+ 	:puissCumul	"13.2106"^^xsd:Double.
+
+:1	:typeProd	"Photovoltaïque"^^xsd:String;
+ 	:pId	"e"^^xsd:String;
+	:pMin	"9"^^xsd:Double;
+	:pMax	"18"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+ 	:nbInstall	"151"^^xsd:Integer;
+ 	:puissCumul	"2.1673"^^xsd:Double.
+
+:2	:typeProd	"Photovoltaïque"^^xsd:String;
+ 	:pId	"d"^^xsd:String;
+	:pMin	"6"^^xsd:Double;
+	:pMax	"9"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+ 	:nbInstall	"7106"^^xsd:Integer;
+ 	:puissCumul	"60.9299"^^xsd:Double.
+
+:3	:typeProd	"Autres"^^xsd:String;
+ 	:pId	"a"^^xsd:String;
+	:pMin	"0"^^xsd:Double;
+	:pMax	"36"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+ 	:nbInstall	"8"^^xsd:Integer;
+ 	:puissCumul	"0.1761"^^xsd:Double.
+
+:4	:typeProd	"Autres"^^xsd:String;
+ 	:pId	"e"^^xsd:String;
+	:pMin	"0.5"^^xsd:Double;
+	:pMax	"1"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+ 	:nbInstall	"4"^^xsd:Integer;
+ 	:puissCumul	"2.547"^^xsd:Double.
+
+:5	:typeProd	"Autres"^^xsd:String;
+ 	:pId	"f"^^xsd:String;
+	:pMin	"1"^^xsd:Double;
+	:pMax	"15"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+ 	:nbInstall	"136"^^xsd:Integer;
+ 	:puissCumul	"296.141"^^xsd:Double.
+
+:6	:typeProd	"Photovoltaïque"^^xsd:String;
+ 	:pId	"h"^^xsd:String;
+	:pMin	"100"^^xsd:Double;
+	:pMax	"250"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+ 	:nbInstall	"456"^^xsd:Integer;
+ 	:puissCumul	"89.53532"^^xsd:Double.
+
+:7	:typeProd	"Photovoltaïque"^^xsd:String;
+ 	:pId	"i"^^xsd:String;
+	:pMin	"250"^^xsd:Double;
+	:pMax	"500"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+ 	:nbInstall	"8"^^xsd:Integer;
+ 	:puissCumul	"3.0436"^^xsd:Double.
+
+:8	:typeProd	"Photovoltaïque"^^xsd:String;
+ 	:pId	"n"^^xsd:String;
+	:pMin	"10"^^xsd:Double;
+	:pMax	"12"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+ 	:nbInstall	"31"^^xsd:Integer;
+ 	:puissCumul	"341.70248"^^xsd:Double.
+
+:9	:typeProd	"Photovoltaïque"^^xsd:String;
+ 	:pId	"j"^^xsd:String;
+	:pMin	"0.5"^^xsd:Double;
+	:pMax	"1"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+ 	:nbInstall	"30"^^xsd:Integer;
+ 	:puissCumul	"24.25582"^^xsd:Double.
+
+:10	:typeProd	"Bio énergie"^^xsd:String;
+  	:pId	"e"^^xsd:String;
+	:pMin	"0.5"^^xsd:Double;
+	:pMax	"1"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+  	:nbInstall	"21"^^xsd:Integer;
+  	:puissCumul	"14.1814"^^xsd:Double.
+
+:11	:typeProd	"Bio énergie"^^xsd:String;
+  	:pId	"f"^^xsd:String;
+	:pMin	"1"^^xsd:Double;
+	:pMax	"15"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+  	:nbInstall	"53"^^xsd:Integer;
+  	:puissCumul	"133.11"^^xsd:Double.
+
+:12	:typeProd	"Hydraulique"^^xsd:String;
+  	:pId	"e"^^xsd:String;
+	:pMin	"0.5"^^xsd:Double;
+	:pMax	"1"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+  	:nbInstall	"10"^^xsd:Integer;
+  	:puissCumul	"5.229"^^xsd:Double.
+
+:13	:typeProd	"Autres"^^xsd:String;
+  	:pId	"c"^^xsd:String;
+	:pMin	"100"^^xsd:Double;
+	:pMax	"250"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"17"^^xsd:Integer;
+  	:puissCumul	"2.858"^^xsd:Double.
+
+:14	:typeProd	"Eolien"^^xsd:String;
+  	:pId	"m"^^xsd:String;
+	:pMin	"10"^^xsd:Double;
+	:pMax	"12"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+  	:nbInstall	"159"^^xsd:Integer;
+  	:puissCumul	"1842.76"^^xsd:Double.
+
+:15	:typeProd	"Eolien"^^xsd:String;
+  	:pId	"i"^^xsd:String;
+	:pMin	"0.5"^^xsd:Double;
+	:pMax	"1"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+  	:nbInstall	"4"^^xsd:Integer;
+  	:puissCumul	"3.59"^^xsd:Double.
+
+:16	:typeProd	"Bio énergie"^^xsd:String;
+  	:pId	"d"^^xsd:String;
+	:pMin	"250"^^xsd:Double;
+	:pMax	"500"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"12"^^xsd:Integer;
+  	:puissCumul	"4.176"^^xsd:Double.
+
+:17	:typeProd	"Eolien"^^xsd:String;
+  	:pId	"l"^^xsd:String;
+	:pMin	"5"^^xsd:Double;
+	:pMax	"10"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+  	:nbInstall	"218"^^xsd:Integer;
+  	:puissCumul	"1910.841"^^xsd:Double.
+
+:18	:typeProd	"Eolien"^^xsd:String;
+  	:pId	"a"^^xsd:String;
+	:pMin	"0"^^xsd:Double;
+	:pMax	"3"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"4"^^xsd:Integer;
+  	:puissCumul	"0.008"^^xsd:Double.
+
+:19	:typeProd	"Eolien"^^xsd:String;
+  	:pId	"k"^^xsd:String;
+	:pMin	"3"^^xsd:Double;
+	:pMax	"5"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+  	:nbInstall	"28"^^xsd:Integer;
+  	:puissCumul	"109.5"^^xsd:Double.
+
+:20	:typeProd	"Photovoltaïque"^^xsd:String;
+  	:pId	"c"^^xsd:String;
+	:pMin	"3"^^xsd:Double;
+	:pMax	"6"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"3287"^^xsd:Integer;
+  	:puissCumul	"16.5069"^^xsd:Double.
+
+:21	:typeProd	"Photovoltaïque"^^xsd:String;
+  	:pId	"k"^^xsd:String;
+	:pMin	"1"^^xsd:Double;
+	:pMax	"3"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+  	:nbInstall	"72"^^xsd:Integer;
+  	:puissCumul	"138.61918"^^xsd:Double.
+
+:22	:typeProd	"Hydraulique"^^xsd:String;
+  	:pId	"d"^^xsd:String;
+	:pMin	"250"^^xsd:Double;
+	:pMax	"500"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"27"^^xsd:Integer;
+  	:puissCumul	"6.394"^^xsd:Double.
+
+:23	:typeProd	"Hydraulique"^^xsd:String;
+  	:pId	"b"^^xsd:String;
+	:pMin	"36"^^xsd:Double;
+	:pMax	"100"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"43"^^xsd:Integer;
+  	:puissCumul	"3.13212"^^xsd:Double.
+
+:24	:typeProd	"Eolien"^^xsd:String;
+  	:pId	"n"^^xsd:String;
+	:pMin	"12"^^xsd:Double;
+	:pMax	"17"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+  	:nbInstall	"90"^^xsd:Integer;
+  	:puissCumul	"1251.618"^^xsd:Double.
+
+:25	:typeProd	"Photovoltaïque"^^xsd:String;
+  	:pId	"l"^^xsd:String;
+	:pMin	"3"^^xsd:Double;
+	:pMax	"5"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+  	:nbInstall	"49"^^xsd:Integer;
+  	:puissCumul	"200.83655"^^xsd:Double.
+
+:26	:typeProd	"Photovoltaïque"^^xsd:String;
+  	:pId	"a"^^xsd:String;
+	:pMin	"0"^^xsd:Double;
+	:pMax	"1"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"9"^^xsd:Integer;
+  	:puissCumul	"0.0087"^^xsd:Double.
+
+:27	:typeProd	"Hydraulique"^^xsd:String;
+  	:pId	"a"^^xsd:String;
+	:pMin	"0"^^xsd:Double;
+	:pMax	"36"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"29"^^xsd:Integer;
+  	:puissCumul	"0.6846"^^xsd:Double.
+
+:28	:typeProd	"Eolien"^^xsd:String;
+  	:pId	"f"^^xsd:String;
+	:pMin	"36"^^xsd:Double;
+	:pMax	"100"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"3"^^xsd:Integer;
+  	:puissCumul	"6.168"^^xsd:Double.
+
+:29	:typeProd	"Eolien"^^xsd:String;
+  	:pId	"b"^^xsd:String;
+	:pMin	"3"^^xsd:Double;
+	:pMax	"6"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"11"^^xsd:Integer;
+  	:puissCumul	"0.0606"^^xsd:Double.
+
+:30	:typeProd	"Eolien"^^xsd:String;
+  	:pId	"j"^^xsd:String;
+	:pMin	"1"^^xsd:Double;
+	:pMax	"3"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+  	:nbInstall	"19"^^xsd:Integer;
+  	:puissCumul	"42.368"^^xsd:Double.
+
+:31	:typeProd	"Photovoltaïque"^^xsd:String;
+  	:pId	"f"^^xsd:String;
+	:pMin	"18"^^xsd:Double;
+	:pMax	"36"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"357"^^xsd:Integer;
+  	:puissCumul	"11.0257"^^xsd:Double.
+
+:32	:typeProd	"Photovoltaïque"^^xsd:String;
+  	:pId	"g"^^xsd:String;
+	:pMin	"36"^^xsd:Double;
+	:pMax	"100"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"1847"^^xsd:Integer;
+  	:puissCumul	"164.351"^^xsd:Double.
+
+:33	:typeProd	"Photovoltaïque"^^xsd:String;
+  	:pId	"m"^^xsd:String;
+	:pMin	"5"^^xsd:Double;
+	:pMax	"10"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+  	:nbInstall	"53"^^xsd:Integer;
+  	:puissCumul	"401.642"^^xsd:Double.
+
+:34	:typeProd	"Hydraulique"^^xsd:String;
+  	:pId	"c"^^xsd:String;
+	:pMin	"100"^^xsd:Double;
+	:pMax	"250"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"41"^^xsd:Integer;
+  	:puissCumul	"4.9683"^^xsd:Double.
+
+:35	:typeProd	"Hydraulique"^^xsd:String;
+  	:pId	"f"^^xsd:String;
+	:pMin	"1"^^xsd:Double;
+	:pMax	"15"^^xsd:Double;
+	:pUnit	"MW"^^xsd:String;
+  	:nbInstall	"35"^^xsd:Integer;
+  	:puissCumul	"75.481"^^xsd:Double.
+
+:36	:typeProd	"Eolien"^^xsd:String;
+  	:pId	"h"^^xsd:String;
+	:pMin	"250"^^xsd:Double;
+	:pMax	"500"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"3"^^xsd:Integer;
+  	:puissCumul	"0.92"^^xsd:Double.
+
+:37	:typeProd	"Bio énergie"^^xsd:String;
+  	:pId	"c"^^xsd:String;
+	:pMin	"100"^^xsd:Double;
+	:pMax	"250"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"55"^^xsd:Integer;
+  	:puissCumul	"11.2609"^^xsd:Double.
+
+:38	:typeProd	"Bio énergie"^^xsd:String;
+  	:pId	"b"^^xsd:String;
+	:pMin	"36"^^xsd:Double;
+	:pMax	"100"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"13"^^xsd:Integer;
+  	:puissCumul	"0.8047"^^xsd:Double.
+
+:39	:typeProd	"Autres"^^xsd:String;
+  	:pId	"d"^^xsd:String;
+	:pMin	"250"^^xsd:Double;
+	:pMax	"500"^^xsd:Double;
+	:pUnit	"kVA"^^xsd:String;
+  	:nbInstall	"3"^^xsd:Integer;
+  	:puissCumul	"0.65"^^xsd:Double.
+

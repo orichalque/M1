@@ -1,0 +1,7 @@
+package com.TPWebNCloud;
+
+import httpservlet;
+
+public class createPetitionServlet extends httpservlet {
+
+}

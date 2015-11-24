@@ -1,0 +1,204 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix notreNomDeDomaine: <notreAdresseDeNomDeDomaine> .
+
+notreNomDeDomaine:b9a39ba85c1e35f542cffeac8b7c60c69c3f2bc1	notreNomDeDomaine:nb_enfa	"4681"^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	"b-]1;3] kVA" ;
+                                                          	notreNomDeDomaine:mw_enfa	"13.2106"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"Photovolta\u00efque" .
+
+notreNomDeDomaine:6164b26865cb9b63bdf37dd699bd84442c4ac0c2	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""6164b26865cb9b63bdf37dd699bd84442c4ac0c2" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 151"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]9;18] kVA" .
+
+notreNomDeDomaine:4c71b8cabec60792f3395f6f7826dc32d6665d49	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""4c71b8cabec60792f3395f6f7826dc32d6665d49" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 7106"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]6;9] kVA" .
+
+notreNomDeDomaine:44ed3c9f7dc05873f78eec512a063e10e7c2156b	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""44ed3c9f7dc05873f78eec512a063e10e7c2156b" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 8"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]0;36] kVA" .
+
+notreNomDeDomaine:bc217316a0eaf666d085709a8bf0194a2ae98bb0	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""bc217316a0eaf666d085709a8bf0194a2ae98bb0" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 4"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]" .
+
+notreNomDeDomaine:ddb3a55038dd77c0d231e719e29422f84598eded	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""ddb3a55038dd77c0d231e719e29422f84598eded" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 136"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]1;15] MW" .
+
+notreNomDeDomaine:d1dc0aa2752e1aa59ac40bfd53ab5deb46c65de3	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""d1dc0aa2752e1aa59ac40bfd53ab5deb46c65de3" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 456"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]100;250] kVA" .
+
+notreNomDeDomaine:3251a3531b78da43b2dcc8ca63b4de45df53fa04	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""3251a3531b78da43b2dcc8ca63b4de45df53fa04" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 8"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]250;500] kVA" .
+
+notreNomDeDomaine:ee43bd8bba68e3ceb42fff9c6415f2e719372999	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""ee43bd8bba68e3ceb42fff9c6415f2e719372999" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 31"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]10;12] MW" .
+
+notreNomDeDomaine:f1b025eb58bd03cfb7c1fb643fa27bd389721594	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""f1b025eb58bd03cfb7c1fb643fa27bd389721594" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 30"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]" .
+
+notreNomDeDomaine:95828831fce2e447b3507f1023d3062c0dc9299f	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""95828831fce2e447b3507f1023d3062c0dc9299f" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 21"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]" .
+
+notreNomDeDomaine:d8a0ea0eb274be40e3bfd9712b564725280bad55	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""d8a0ea0eb274be40e3bfd9712b564725280bad55" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 53"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]1;15] MW" .
+
+notreNomDeDomaine:ad65556896372bf455a7f86075b2b4435c0b51aa	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""ad65556896372bf455a7f86075b2b4435c0b51aa" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 10"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]" .
+
+notreNomDeDomaine:a4bbde5c42d036ff4cbed5256cd9a04cfe552e24	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""a4bbde5c42d036ff4cbed5256cd9a04cfe552e24" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 17"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]100;250] kVA" .
+
+notreNomDeDomaine:2228c983bf8cbe80b25798e4548a9309333014fe	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""2228c983bf8cbe80b25798e4548a9309333014fe" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 159"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]10;12] MW" .
+
+notreNomDeDomaine:cb2d5f4ea3d2dcb2793e9f70cf7de475129adb38	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""cb2d5f4ea3d2dcb2793e9f70cf7de475129adb38" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 4"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]" .
+
+notreNomDeDomaine:51ff5466cf79332c2df76d85884f105b12c8fac1	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""51ff5466cf79332c2df76d85884f105b12c8fac1" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 12"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]250;500] kVA" .
+
+notreNomDeDomaine:45d6e7d76732fe3015b5ce335fcae0e9bac62f97	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""45d6e7d76732fe3015b5ce335fcae0e9bac62f97" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 218"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]5;10] MW" .
+
+notreNomDeDomaine:872eec9525a880d898b7091983a0cdb7fd786e1d	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""872eec9525a880d898b7091983a0cdb7fd786e1d" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 4"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]0;3] kVA" .
+
+notreNomDeDomaine:450b789519244e96ff17d2220705da5d00df1af8	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""450b789519244e96ff17d2220705da5d00df1af8" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 28"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]3;5] MW" .
+
+notreNomDeDomaine:014c463e374bedbc9b24847552911006ccccb4fe	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""014c463e374bedbc9b24847552911006ccccb4fe" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 3287"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]3;6] kVA" .
+
+notreNomDeDomaine:0fc8987bf50177abdf5d35657a8273089dbf031c	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""0fc8987bf50177abdf5d35657a8273089dbf031c" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 72"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]1;3] MW" .
+
+notreNomDeDomaine:3d5fd800f665e1e954191d0d14cbe4104393ea83	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""3d5fd800f665e1e954191d0d14cbe4104393ea83" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 27"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]250;500] kVA" .
+
+notreNomDeDomaine:b7db0a0bf67149a82a5d4f53ed432968be580a07	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""b7db0a0bf67149a82a5d4f53ed432968be580a07" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 43"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]36;100] kVA" .
+
+notreNomDeDomaine:511687619f0823f14a4169ea4497b1a6f362f91f	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""511687619f0823f14a4169ea4497b1a6f362f91f" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 90"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]12;17] MW" .
+
+notreNomDeDomaine:a9e353cf6e0987e19755168cfeba87317c919358	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""a9e353cf6e0987e19755168cfeba87317c919358" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 49"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]3;5] MW" .
+
+notreNomDeDomaine:1a7207a8a56dc24f770472d64f20d796ee018bac	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""1a7207a8a56dc24f770472d64f20d796ee018bac" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 9"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]0;1] kVA" .
+
+notreNomDeDomaine:8c67b3e937ba2e99cf25bcb5d8bfb91b9f633089	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""8c67b3e937ba2e99cf25bcb5d8bfb91b9f633089" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 29"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]0;36] kVA" .
+
+notreNomDeDomaine:bb9502d11fd057e250834172584f10fda0246ed7	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""bb9502d11fd057e250834172584f10fda0246ed7" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 3"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]36;100] kVA" .
+
+notreNomDeDomaine:d20888c70a97a7aa73fb8df42dbf1fc65b0cc00a	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""d20888c70a97a7aa73fb8df42dbf1fc65b0cc00a" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 11"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]3;6] kVA" .
+
+notreNomDeDomaine:858956e5832f2a446211e11195efec9e6148fe8c	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""858956e5832f2a446211e11195efec9e6148fe8c" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 19"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]1;3] MW" .
+
+notreNomDeDomaine:5508a8e8b9e3c4996991d9a4309f2b26f0de9f6e	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""5508a8e8b9e3c4996991d9a4309f2b26f0de9f6e" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 357"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]18;36] kVA" .
+
+notreNomDeDomaine:46b1cd43da14c3fbf78e72fbe58cd63abb842dc7	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""46b1cd43da14c3fbf78e72fbe58cd63abb842dc7" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 1847"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]36;100] kVA" .
+
+notreNomDeDomaine:c67b16c31bcd58ed0efcf3f22fd1321e04e8d3b1	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""c67b16c31bcd58ed0efcf3f22fd1321e04e8d3b1" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 53"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]5;10] MW" .
+
+notreNomDeDomaine:60e525f74124d301e5d38ddde5eb7a367e31d778	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""60e525f74124d301e5d38ddde5eb7a367e31d778" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 41"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]100;250] kVA" .
+
+notreNomDeDomaine:53c84be773be663c4c3a3ce4c6b986c2d40273f9	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""53c84be773be663c4c3a3ce4c6b986c2d40273f9" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 35"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]1;15] MW" .
+
+notreNomDeDomaine:1f24250679eaff62cab3e5f4ab221decc75f75d9	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""1f24250679eaff62cab3e5f4ab221decc75f75d9" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 3"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]250;500] kVA" .
+
+notreNomDeDomaine:55c182c88c63243f1e93aa209a7fbfa8651bdced	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""55c182c88c63243f1e93aa209a7fbfa8651bdced" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 55"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]100;250] kVA" .
+
+notreNomDeDomaine:cfe87f99f146eb268f52b172ad9e280ed4318448	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""cfe87f99f146eb268f52b172ad9e280ed4318448" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 13"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]36;100] kVA" .
+
+notreNomDeDomaine:462d4fd3e13f34b10eccde8cd7a8756a08d26808	notreNomDeDomaine:nb_enfa	": "fa-nat-tranches""^^xsd:integer ;
+                                                          	notreNomDeDomaine:tranche	""462d4fd3e13f34b10eccde8cd7a8756a08d26808" ;
+                                                          	notreNomDeDomaine:mw_enfa	""nb_enfa": 3"^^xsd:double ;
+                                                          	notreNomDeDomaine:typeprod	"-]250;500] kVA" .

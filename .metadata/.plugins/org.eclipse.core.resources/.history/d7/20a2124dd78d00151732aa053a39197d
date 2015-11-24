@@ -1,0 +1,13 @@
+package com.TPWebNCloud;
+
+import javax.servlet.http.HttpServlet;
+
+import com.googlecode.objectify.ObjectifyService;
+import com.myjee.Person;
+
+public class createPetitionServlet extends HttpServlet {
+	static {
+		ObjectifyService.register(Person.class);
+	}
+
+}

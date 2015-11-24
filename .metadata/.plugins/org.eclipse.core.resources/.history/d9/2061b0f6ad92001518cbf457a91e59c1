@@ -1,0 +1,14 @@
+import java.io.IOException;
+
+public class main {
+
+    public static void main(String args[]) throws IOException {
+    	CSVToTTL csvtottl = new CSVToTTL("file.csv");
+    	csvtottl.read();
+    	String[] types = {"^^xsd:String","^^xsd:String","^^xsd:Integer","^^xsd:Double"};
+    	csvtottl.setTypes(types);
+    	csvtottl.writeCSV("file.ttl");
+    	System.out.println("Success");
+    }
+
+}

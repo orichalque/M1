@@ -1,0 +1,7 @@
+package com.TPWebNCloud;
+
+public class Petition {
+	protected String title;
+	protected String description;
+
+}

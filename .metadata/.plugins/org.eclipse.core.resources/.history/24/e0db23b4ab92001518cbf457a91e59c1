@@ -1,0 +1,89 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.util.Scanner;
+
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.query.ResultSetFormatter;
+import org.apache.jena.rdf.model.InfModel;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.update.UpdateAction;
+import org.apache.jena.util.FileManager;
+
+// Lines with a "~~" in commentary indicate that you may change the path of the file depending your OS and your machine
+
+public class Main {
+	@SuppressWarnings("resource")
+	public static void main(String[] args) throws FileNotFoundException {
+		Scanner reader = new Scanner(System.in);  // Reading from System.in
+		String src = "bin/sources/art.xml"; // ~~
+		String action = "";
+		String req = "";
+	
+		
+	    // create an empty model
+	  	Model model = ModelFactory.createDefaultModel(); // basic model
+	  	Model modelPlusInstance = model;				 // basic model + cubist instance added
+	  	InfModel inf;									 // inference model + cubist instance added
+	
+	  	// use the FileManager to find the input file
+	  	InputStream in = FileManager.get().open( src );
+	    if (in == null) {
+	    	throw new IllegalArgumentException(
+	  	                                  "File: " + src + " not found");
+	    }
+	  	// read the RDF/XML file
+	  	model.read(in, null);
+	  	
+	  	
+	  	req = new Scanner(new File("bin/requetes/req3.rq")).useDelimiter("\\Z").next(); // load question 3 request file / ~~
+	  	UpdateAction.parseExecute(req, modelPlusInstance) ;
+	  	
+	  	inf = ModelFactory.createRDFSModel(modelPlusInstance); // create a model for questions 5 and 6
+	  	
+	  	while (!(action.equals("exit"))){
+	  		System.out.println("Type the number of the question that you want to display the result or aything else to escape...");
+	  		System.out.println("Avaible inputs are : 1 | 2 | 4_1 | 4_2 | 6_1 or 6_2 ...");
+	  		System.out.println("For question 3 and 5, please look at the code and the request 3 file.");
+
+	  		action = reader.nextLine();
+	  		
+	  		if (action.equals("1") || action.equals("2")){ // question 1 and 2
+	  			req = new Scanner(new File("bin/requetes/req" + action.toString() + ".rq")).useDelimiter("\\Z").next(); // ~~
+	  			// we execute requests 1 and 2 on the normal model
+	  			Query query = QueryFactory.create(req);
+	  		  	QueryExecution qExe = QueryExecutionFactory.create(query, model);
+	  		  	ResultSet resultsRes = qExe.execSelect();
+	  		  	ResultSetFormatter.out(System.out,resultsRes,query);
+	  		  	
+	  		} else if(action.equals("4_1")|| action.equals("4_2")){ // question 3 and 4
+	  			req = new Scanner(new File("bin/requetes/req" + action.toString() + ".rq")).useDelimiter("\\Z").next(); // ~~
+	  			// we execute requests 4_1 and 4_2 on the normal model + cubist instance
+	  			Query query = QueryFactory.create(req);
+	  		  	QueryExecution qExe = QueryExecutionFactory.create(query, modelPlusInstance);
+	  		  	ResultSet resultsRes = qExe.execSelect();
+	  		  	ResultSetFormatter.out(System.out,resultsRes,query);
+	  		  	
+	  		} else if(action.equals("6_1")|| action.equals("6_2")){ // question 5 and 6
+	  			req = new Scanner(new File("bin/requetes/req" + action.toString() + ".rq")).useDelimiter("\\Z").next(); // ~~
+	  			// we execute requests 4_1 and 4_2 on the inference model + cubist instance 
+	  			Query query = QueryFactory.create(req);
+	  		  	QueryExecution qExe = QueryExecutionFactory.create(query, inf);
+	  		  	ResultSet resultsRes = qExe.execSelect();
+	  		  	ResultSetFormatter.out(System.out,resultsRes,query);
+	  		  	
+	  		  	
+	  		  System.out.println("-----------\n Question 6 answer : \nThis time, Painter instances (r1 and r3) are correctly displayed because the InfModel understand RDFS properties like subClassOf\n----------------");
+	  		}else{
+	  			action = "exit";
+	  		}
+	  	}
+    }
+
+}
+

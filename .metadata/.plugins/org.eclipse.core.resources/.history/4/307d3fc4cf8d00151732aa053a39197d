@@ -1,0 +1,17 @@
+package com.TPWebNCloud;
+
+public class Petition {
+	protected String title;
+	protected String description;
+	
+	public Petition(String title, String description) {
+		super();
+		this.title = title;
+		this.description = description;
+	}
+	
+	public Petition() {
+		
+	}
+	
+}

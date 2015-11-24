@@ -1,0 +1,7 @@
+(function() {
+	var app = angular.module('tinypet', []);
+	app.controller("tinyCtrl", function($scope, $http) {
+		var ctrl = this;
+		ctrl.value = 50;
+	})
+})();

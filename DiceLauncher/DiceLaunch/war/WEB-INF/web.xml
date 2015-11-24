@@ -11,7 +11,12 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>DiceLaunch</servlet-name>
 		<url-pattern>/dicelaunch</url-pattern>
 	</servlet-mapping>
-	
+
+	<servlet>
+		<servlet-name>Session</servlet-name>
+		<servlet-class>com.myjee.SessionServlet</servlet-class>
+	</servlet>
+		
 	<servlet>
 		<servlet-name>ScoreDisplay</servlet-name>
 		<servlet-class>com.myjee.ScoreDisplayServlet</servlet-class>

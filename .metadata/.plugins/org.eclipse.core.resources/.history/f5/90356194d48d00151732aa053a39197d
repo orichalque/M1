@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>TinyPet</title>
+  </head>
+
+  <body ng-app="tinypet">
+    <h1>TinyPet bonjourus</h1>
+	<div ng-controller="tinyCtrl">
+		<button ng-click="tinyCtrl.submit()">Soumettre une pétition</button>
+		<button ng-click="tinyCtrl.list()">Lister les pétitions à signer</button>
+		
+		<form name="submitPetForm" ng-show="tinypet.submitPet == true" ng-submit = "tinypet.submitPetition()">
+			<input ng-model="tinyPet.petTitle" type="text" placeholder="Entrez ici le nom de votre pétition!" id="petTitle">
+			<input ng-model="tinyPet.petText" type="text" placeholder="Entrez ici la description de votre pétition!" id="petText">
+		</form>
+		
+		<div ng-show="tinypet.listPet == true">
+			<p>Listing des petitions</p>
+		</div>
+		
+		<form name="submitPetForm" ng-show="ctrl.listPet == true">
+			Hello list
+		</form>
+    <table>
+      <tr>
+        <td colspan="2" style="font-weight:bold;">Available Servlets:</td>        
+      </tr>
+      <tr>
+        <td><a href="tpnotewebncloud">TPNoteWebNCloud</a></td>
+      </tr>
+    </table>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

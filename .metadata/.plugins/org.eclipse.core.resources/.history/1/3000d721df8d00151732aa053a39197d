@@ -1,0 +1,34 @@
+package com.TPWebNCloud;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.googlecode.objectify.ObjectifyService;
+
+@SuppressWarnings("serial")
+public class listPetitionServlet extends HttpServlet {
+	static {
+		ObjectifyService.register(Petition.class);
+	}
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
+			  throws ServletException, IOException {
+		PrintWriter out = response.getWriter();
+		out.println("Coucou");
+		List<Petition> liste = ObjectifyService.ofy().load().type(Petition.class).list();
+		
+		out.println("Coucou");
+		for (Petition p : liste) {
+			out.println("<li>"+p.toString()+"</li>");
+			
+		}
+		
+		out.println("<form action=\"/\" ng-show=\"diceCtrl.submited == true\"><input type=\"submit\" value=\"Play Again\"></form>");
+		
+	}
+}

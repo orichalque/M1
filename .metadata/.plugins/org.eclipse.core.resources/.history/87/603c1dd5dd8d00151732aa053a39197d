@@ -1,0 +1,32 @@
+package com.TPWebNCloud;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.googlecode.objectify.ObjectifyService;
+
+
+
+
+public class listPetitionServlet extends HttpServlet {
+	public class ScoreDisplayServlet extends HttpServlet {
+		static {
+			ObjectifyService.register(Person.class);
+		}
+		public void doGet(HttpServletRequest request, HttpServletResponse response)
+				  throws ServletException, IOException {
+			List<Person> liste = ObjectifyService.ofy().load().type(Person.class).order("-score").limit(10).list();
+			PrintWriter out = response.getWriter();
+			
+			
+			
+			
+		}
+	}
+}

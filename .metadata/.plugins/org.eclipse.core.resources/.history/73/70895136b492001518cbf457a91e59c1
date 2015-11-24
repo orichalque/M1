@@ -1,0 +1,129 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.util.Vector;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+public class CSVToTTL {
+	protected BufferedReader reader;
+	protected Vector<String[]> csv;
+	protected String domain;
+	protected String adressDomain;
+	protected String[] types;
+  
+	public CSVToTTL(String file) throws FileNotFoundException{
+		csv = new Vector<String[]>();
+		reader = new BufferedReader(new FileReader(file));
+      	domain = "";
+      	adressDomain = "no_adress_domain";
+	}
+	protected void setTypes(String[] tp) {
+		types = tp;
+	}
+	
+	public void setDomainAndAdress(String ad, String dom) {
+   		domain = dom;
+    	adressDomain = ad;
+	}
+	
+	public void read() throws IOException{
+		String line = "";
+    	while ((line = (reader.readLine())) != null) {
+        	csv.add(line.split(";"));
+        }
+    }
+               
+  	public boolean writeCSV(String filename) throws FileNotFoundException, UnsupportedEncodingException {
+      int cpt = 0;
+      int inner;
+      int space;
+      String unit, min, max, id;
+      id = "";
+      min = "";
+      max = "";
+      unit = "";
+      
+      Pattern p; // = Pattern.compile("(a((b)(c)))");
+      // création d'un moteur de recherche
+      Matcher m; // = p.matcher("abc");
+
+
+      if (csv.isEmpty()) {
+        return false;
+      } else {
+        PrintWriter writer = new PrintWriter(filename, "UTF-8"); 
+        //Create the output ttl file
+        //Read the line 1 containing the fields used in the rdfs
+
+        writer.println("@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .");
+    	writer.println("@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .");
+    	writer.println("@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .");
+    	writer.println("@prefix :" + domain + " <" + adressDomain + "> .");
+
+        
+        for (int k = 1; k < csv.size(); ++k) {
+          String[] tab = csv.elementAt(k);
+          writer.print(domain + ":" + Integer.toString(cpt));
+          space = domain.length() + Integer.toString(cpt).toString().length();
+          inner = 0;
+          for(String s : tab){
+            if (inner != 0){
+             	 writer.print(generateSpace(space));
+            }
+            
+            if (inner != 1){
+            	s = '"' + s + '"';
+            	writer.print('\t' + domain + ":" + csv.elementAt(0)[inner] + '\t' + s + types[inner]);
+            }else{
+            	p = Pattern.compile("[a-z]+");
+            	m = p.matcher(s);
+            	if (m.find()) id = m.group();
+            	
+            	p = Pattern.compile("[0-9.]+");
+            	m = p.matcher(s);
+            	if (m.find()) min = m.group();
+            	
+            	p = Pattern.compile(",[0-9.]+");
+            	m = p.matcher(s);
+            	if (m.find()) max = m.group().replace(",", "");
+            	
+            	p = Pattern.compile("(\\[|\\])");
+            	m = p.matcher(s);
+            	if (m.find()) unit = m.group();
+            	System.out.println(unit);
+            	writer.print('\t' + domain + ":pId\t" + id + types[inner]);
+            	writer.print('\t' + domain + ":pMin\t" + min + types[inner]);
+            	writer.print('\t' + domain + ":pMax\t" + max + types[inner]);
+            	writer.print('\t' + domain + ":pUnit\t" + unit + types[inner]);          	
+            }
+            
+        	writer.print('\t' + domain + ":" + csv.elementAt(0)[inner] + '\t' + s + types[inner]);
+        	if (inner == tab.length - 1){
+            	writer.println('.');  
+        	} else {
+            	writer.println(';');
+            }
+            ++inner;
+          }
+          ++cpt;
+        }
+        writer.close(); 
+      }
+      return true;
+  	}
+  	
+    public static String generateSpace(int i){
+        if (i <= 1) {
+          return " ";
+        } else {
+          return " " + generateSpace(i - 1);
+        }
+      }
+                
+}

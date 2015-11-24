@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>TinyPet</title>
+  </head>
+
+  <body ng-app="tinypet">
+    <h1>TinyPet</h1>
+	<div ng-controller="tinyCtrl as tinyCtrl">
+		<button ng-click="tinyCtrl.submit()">Soumettre une pétition</button>
+		<button ng-click="tinyCtrl.list()">Lister les pétitions à signer</button>
+		
+		<form ng-show="tinyCtrl.submitPet && !tinyCtrl.submited" name="submitPetForm" ng-submit = "tinypet.submitPetition()">
+			<p>Formulaire de création de pétition</p>
+			<input ng-model="tinyPet.petTitle" type="text" placeholder="Entrez ici le nom de votre pétition!" id="petTitle"><br/>
+			<input ng-model="tinyPet.petText" type="text" placeholder="Entrez ici la description de votre pétition!" id="petText"><br/>
+			<input type="submit">
+		</form>
+
+		<div ng-show="tinyCtrl.listPet">
+			<p>Listing des petitions</p>
+		</div>
+		<form name="submitPetForm" ng-show="ctrl.listPet == true">
+			Hello list
+		</form>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

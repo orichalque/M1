@@ -43,4 +43,10 @@
 <fullyQualifiedTypeName name="fr.univnantes.cta.impl.AirplaneImpl"/>
 <fullyQualifiedTypeName name="fr.univnantes.cta.AirplaneOverload"/>
 <fullyQualifiedTypeName name="fr.univnantes.cta.IncompatibleAirway"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletException"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="com.google.appengine.repackaged.com.google.gson.Gson"/>
+<fullyQualifiedTypeName name="com.googlecode.objectify.ObjectifyService"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
 </qualifiedTypeNameHistroy>

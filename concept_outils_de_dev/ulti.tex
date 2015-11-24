@@ -1,0 +1,35 @@
+\documentclass[a4paper]{article}
+\usepackage[francais]{babel}
+\usepackage{array}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amssymb}
+\newtheorem{prop}{Propriété}
+\newcommand{\vabs}[1]{\ensuremath{|#1|}}
+\title{Grand tournois d'Ultimate Freesbee}
+\author{Jean Dupont}
+
+\begin{document}
+\maketitle
+Le grand tournoi d'\textit{Ultimate Freesbee} aura lieu cette année à Talon-Plage. La liste des participants (voir table 1) sera distribuée à tous les joueurs au début du premier match.
+	
+\begin{tabular}{lllr}
+	\multicolumn{4}{c}{TAB. 1 - Participants} \\
+	\hline 
+	\textbf{Nom} & \textbf{Prénom} & \textbf{Adresse} & \textbf{Âge} \\
+	\hline 
+	Dupont & Jean & 34 rue des oliviers. & 34 \\
+	\multicolumn{2}{c}{} & Toto sur Vire & \\
+	Durant & Paul & 131, impasse des pommes. 44200 Blabla sur Erdre & 4 \\
+	\multicolumn{2}{c}{} & 44200 Blabla sur Erdre & \\
+	De Haviland & Marc-Aurèle & 6 place Max Mahon. 44110 & 102 \\
+	\multicolumn{2}{c}{} & Nantes & \\
+	\hline
+\end{tabular}
+
+\begin{prop}[Inégalité triangulaire]. Pour toutes valeurs réelles de $a$, $b$, $c$, on a:
+\begin{equation}
+\vabs{a - b} \leqslant \vabs{a - c} + \vabs{c - b}. 
+\end{equation}
+\end{prop}
+\end{document}

@@ -1,0 +1,7 @@
+package com.TPWebNCloud;
+
+import HttpServlet;
+
+public class listPetitionServlet extends HttpServlet {
+
+}

@@ -1,0 +1,26 @@
+(function() {
+	var app = angular.module('tinypet', []);
+	app.controller("tinyCtrl", function($scope, $http) {
+		var ctrl = this;
+		ctrl.submitPet = false;
+		ctrl.listPet = false;
+		ctrl.petText = "";
+		ctrl.petTitle = "";
+		ctrl.submited = false;
+		
+		ctrl.submitPetition = function() {
+			//send petition to servlet for datastore add
+			ctrl.submited = true;
+		}
+		
+		ctrl.submit = function() {
+			ctrl.submitPet = true;
+			ctrl.listPet = false;
+		}
+		
+		ctrl.list = function() {
+			ctrl.submitPet = false;
+			ctrl.listPet = true;
+		}
+	})
+})();
