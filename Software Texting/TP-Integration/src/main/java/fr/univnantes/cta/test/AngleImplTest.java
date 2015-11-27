@@ -51,6 +51,5 @@ import junit.framework.TestCase;
 		a.sin();
 		a.degrees();
 		a.radians();
-
 	}
 }

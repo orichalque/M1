@@ -14,8 +14,6 @@ public class PositionImpl implements Position {
         this.latitude = latitude;
     }
 
-
-
     public Angle getLatitude() {
         return latitude;
     }

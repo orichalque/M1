@@ -18,4 +18,5 @@ public interface Coordinate extends Angle {
      * @see CompassDirection
      */
     public abstract CompassDirection direction();
+    
 }
