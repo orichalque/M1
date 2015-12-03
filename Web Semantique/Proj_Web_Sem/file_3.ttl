@@ -1,0 +1,5 @@
+@prefix ns0: <http://erdf.opendatasoft.com/projetwebsem/parc-raccorde-par-tranches-csv#> .
+@prefix dbpedia: <http://fr.dbpedia.org/page#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix erdf: <http://erdf.org#> .
+@prefix semanco: <http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#> .

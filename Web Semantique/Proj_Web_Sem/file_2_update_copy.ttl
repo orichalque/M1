@@ -1,0 +1,167 @@
+@prefix ns0: <http://erdf.opendatasoft.com/projetwebsem/parc-raccorde-par-tranches-csv#> .
+@prefix dbpedia: <http://fr.dbpedia.org/page#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix erdf: <http://erdf.org#> .
+@prefix semanco: <http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#> .
+
+:0	a semanco:Solar_Energy ;
+ 	erdf:TrancheDePuissance	"b-]1,3] kVA";
+ 	erdf:NbInstallation	"4681";
+ 	dbpedia:Megawatt	"13.2106".
+:1	a semanco:Solar_Energy ;
+ 	erdf:TrancheDePuissance	"e-]9,18] kVA";
+ 	erdf:NbInstallation	"151";
+ 	dbpedia:Megawatt	"2.1673".
+:2	a semanco:Solar_Energy ;
+ 	erdf:TrancheDePuissance	"d-]6,9] kVA";
+ 	erdf:NbInstallation	"7106";
+ 	dbpedia:Megawatt	"60.9299".
+:3	:typeProd	"Autres";
+ 	erdf:TrancheDePuissance	"a-]0,36] kVA";
+ 	erdf:NbInstallation	"8";
+ 	dbpedia:Megawatt	"0.1761".
+:4	:typeProd	"Autres";
+ 	erdf:TrancheDePuissance	"e-]0.5,1] MW";
+ 	erdf:NbInstallation	"4";
+ 	dbpedia:Megawatt	"2.547".
+:5	:typeProd	"Autres";
+ 	erdf:TrancheDePuissance	"f-]1,15] MW";
+ 	erdf:NbInstallation	"136";
+ 	dbpedia:Megawatt	"296.141".
+:6	a semanco:Solar_Energy ;
+ 	erdf:TrancheDePuissance	"h-]100,250] kVA";
+ 	erdf:NbInstallation	"456";
+ 	dbpedia:Megawatt	"89.53532".
+:7	a semanco:Solar_Energy ;
+ 	erdf:TrancheDePuissance	"i-]250,500] kVA";
+ 	erdf:NbInstallation	"8";
+ 	dbpedia:Megawatt	"3.0436".
+:8	a semanco:Solar_Energy ;
+ 	erdf:TrancheDePuissance	"n-]10,12] MW";
+ 	erdf:NbInstallation	"31";
+ 	dbpedia:Megawatt	"341.70248".
+:9	a semanco:Solar_Energy ;
+ 	erdf:TrancheDePuissance	"j-]0.5,1] MW";
+ 	erdf:NbInstallation	"30";
+ 	dbpedia:Megawatt	"24.25582".
+:10	:typeProd	"Bio énergie";
+  	erdf:TrancheDePuissance	"e-]0.5,1] MW";
+  	erdf:NbInstallation	"21";
+  	dbpedia:Megawatt	"14.1814".
+:11	:typeProd	"Bio énergie";
+  	erdf:TrancheDePuissance	"f-]1,15] MW";
+  	erdf:NbInstallation	"53";
+  	dbpedia:Megawatt	"133.11".
+:12	:typeProd	"Hydraulique";
+  	erdf:TrancheDePuissance	"e-]0.5,1] MW";
+  	erdf:NbInstallation	"10";
+  	dbpedia:Megawatt	"5.229".
+:13	:typeProd	"Autres";
+  	erdf:TrancheDePuissance	"c-]100,250] kVA";
+  	erdf:NbInstallation	"17";
+  	dbpedia:Megawatt	"2.858".
+:14	:typeProd	"Eolien";
+  	erdf:TrancheDePuissance	"m-]10,12] MW";
+  	erdf:NbInstallation	"159";
+  	dbpedia:Megawatt	"1842.76".
+:15	:typeProd	"Eolien";
+  	erdf:TrancheDePuissance	"i-]0.5,1] MW";
+  	erdf:NbInstallation	"4";
+  	dbpedia:Megawatt	"3.59".
+:16	:typeProd	"Bio énergie";
+  	erdf:TrancheDePuissance	"d-]250,500] kVA";
+  	erdf:NbInstallation	"12";
+  	dbpedia:Megawatt	"4.176".
+:17	:typeProd	"Eolien";
+  	erdf:TrancheDePuissance	"l-]5,10] MW";
+  	erdf:NbInstallation	"218";
+  	dbpedia:Megawatt	"1910.841".
+:18	:typeProd	"Eolien";
+  	erdf:TrancheDePuissance	"a-]0,3] kVA";
+  	erdf:NbInstallation	"4";
+  	dbpedia:Megawatt	"0.008".
+:19	:typeProd	"Eolien";
+  	erdf:TrancheDePuissance	"k-]3,5] MW";
+  	erdf:NbInstallation	"28";
+  	dbpedia:Megawatt	"109.5".
+:20	a semanco:Solar_Energy ;
+  	erdf:TrancheDePuissance	"c-]3,6] kVA";
+  	erdf:NbInstallation	"3287";
+  	dbpedia:Megawatt	"16.5069".
+:21	a semanco:Solar_Energy ;
+  	erdf:TrancheDePuissance	"k-]1,3] MW";
+  	erdf:NbInstallation	"72";
+  	dbpedia:Megawatt	"138.61918".
+:22	:typeProd	"Hydraulique";
+  	erdf:TrancheDePuissance	"d-]250,500] kVA";
+  	erdf:NbInstallation	"27";
+  	dbpedia:Megawatt	"6.394".
+:23	:typeProd	"Hydraulique";
+  	erdf:TrancheDePuissance	"b-]36,100] kVA";
+  	erdf:NbInstallation	"43";
+  	dbpedia:Megawatt	"3.13212".
+:24	:typeProd	"Eolien";
+  	erdf:TrancheDePuissance	"n-]12,17] MW";
+  	erdf:NbInstallation	"90";
+  	dbpedia:Megawatt	"1251.618".
+:25	a semanco:Solar_Energy ;
+  	erdf:TrancheDePuissance	"l-]3,5] MW";
+  	erdf:NbInstallation	"49";
+  	dbpedia:Megawatt	"200.83655".
+:26	a semanco:Solar_Energy ;
+  	erdf:TrancheDePuissance	"a-]0,1] kVA";
+  	erdf:NbInstallation	"9";
+  	dbpedia:Megawatt	"0.0087".
+:27	:typeProd	"Hydraulique";
+  	erdf:TrancheDePuissance	"a-]0,36] kVA";
+  	erdf:NbInstallation	"29";
+  	dbpedia:Megawatt	"0.6846".
+:28	:typeProd	"Eolien";
+  	erdf:TrancheDePuissance	"f-]36,100] kVA";
+  	erdf:NbInstallation	"3";
+  	dbpedia:Megawatt	"6.168".
+:29	:typeProd	"Eolien";
+  	erdf:TrancheDePuissance	"b-]3,6] kVA";
+  	erdf:NbInstallation	"11";
+  	dbpedia:Megawatt	"0.0606".
+:30	:typeProd	"Eolien";
+  	erdf:TrancheDePuissance	"j-]1,3] MW";
+  	erdf:NbInstallation	"19";
+  	dbpedia:Megawatt	"42.368".
+:31	a semanco:Solar_Energy ;
+  	erdf:TrancheDePuissance	"f-]18,36] kVA";
+  	erdf:NbInstallation	"357";
+  	dbpedia:Megawatt	"11.0257".
+:32	a semanco:Solar_Energy ;
+  	erdf:TrancheDePuissance	"g-]36,100] kVA";
+  	erdf:NbInstallation	"1847";
+  	dbpedia:Megawatt	"164.351".
+:33	a semanco:Solar_Energy ;
+  	erdf:TrancheDePuissance	"m-]5,10] MW";
+  	erdf:NbInstallation	"53";
+  	dbpedia:Megawatt	"401.642".
+:34	:typeProd	"Hydraulique";
+  	erdf:TrancheDePuissance	"c-]100,250] kVA";
+  	erdf:NbInstallation	"41";
+  	dbpedia:Megawatt	"4.9683".
+:35	:typeProd	"Hydraulique";
+  	erdf:TrancheDePuissance	"f-]1,15] MW";
+  	erdf:NbInstallation	"35";
+  	dbpedia:Megawatt	"75.481".
+:36	:typeProd	"Eolien";
+  	erdf:TrancheDePuissance	"h-]250,500] kVA";
+  	erdf:NbInstallation	"3";
+  	dbpedia:Megawatt	"0.92".
+:37	:typeProd	"Bio énergie";
+  	erdf:TrancheDePuissance	"c-]100,250] kVA";
+  	erdf:NbInstallation	"55";
+  	dbpedia:Megawatt	"11.2609".
+:38	:typeProd	"Bio énergie";
+  	erdf:TrancheDePuissance	"b-]36,100] kVA";
+  	erdf:NbInstallation	"13";
+  	dbpedia:Megawatt	"0.8047".
+:39	:typeProd	"Autres";
+  	erdf:TrancheDePuissance	"d-]250,500] kVA";
+  	erdf:NbInstallation	"3";
+  	dbpedia:Megawatt	"0.65".
+

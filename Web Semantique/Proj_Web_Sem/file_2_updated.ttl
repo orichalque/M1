@@ -1,0 +1,220 @@
+@prefix dbpedia: <http://fr.dbpedia.org/page#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix erdf: <http://erdf.org#> .
+@prefix semanco: <http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+erdf:fa-nat-tranches
+  a void:Dataset ;
+  dcterms:title "fa-nat-tranches" ;
+  dcterms:creator "ERDF" ;
+  dcterms:contributor "Thibault Béziers La Fosse" ;
+  dcterms:contributor "Jay-z Lenormand ;
+  dcterms:publisher "ERDF" ;
+  dcterms:source <https://erdf.opendatasoft.com/explore/dataset/parc-raccorde-par-tranches/> ;
+  dcterms:created "2015-11-01"^^xsd:date ;
+  dcterms:modified "2015-12-01"^^xsd:date .
+  
+erdf:photovoltaique_b-1-3-kva	
+	a semanco:Solar_Energy ;
+ 	erdf:TrancheDePuissance	"b-]1,3] kVA";
+ 	erdf:NbInstallation	"4681"^^xsd:Integer;
+ 	dbpedia:Megawatt	"13.2106"^^xsd:Double.
+erdf:photovoltaique_e-9-18-kva	
+	a semanco:Solar_Energy ;
+ 	erdf:TrancheDePuissance	"e-]9,18] kVA";
+ 	erdf:NbInstallation	"151"^^xsd:Integer;
+ 	dbpedia:Megawatt	"2.1673"^^xsd:Double.
+erdf:photovoltaique_d-6-9-kva	
+	a semanco:Solar_Energy ;
+ 	erdf:TrancheDePuissance	"d-]6,9] kVA";
+ 	erdf:NbInstallation	"7106"^^xsd:Integer;
+ 	dbpedia:Megawatt	"60.9299"^^xsd:Double.
+erdf:autres_a-0-36-kva	
+	a "Autres";
+ 	erdf:TrancheDePuissance	"a-]0,36] kVA";
+ 	erdf:NbInstallation	"8"^^xsd:Integer;
+ 	dbpedia:Megawatt	"0.1761"^^xsd:Double.
+erdf:autres_e-0.5-1-mw	
+	a "Autres";
+ 	erdf:TrancheDePuissance	"e-]0.5,1] MW";
+ 	erdf:NbInstallation	"4"^^xsd:Integer;
+ 	dbpedia:Megawatt	"2.547"^^xsd:Double.
+erdf:autres_f-1-15-mw	
+	a "Autres";
+ 	erdf:TrancheDePuissance	"f-]1,15] MW";
+ 	erdf:NbInstallation	"136"^^xsd:Integer;
+ 	dbpedia:Megawatt	"296.141"^^xsd:Double.
+erdf:photovoltaique_i-100-250-kva	
+	a semanco:Solar_Energy ;
+ 	erdf:TrancheDePuissance	"h-]100,250] kVA";
+ 	erdf:NbInstallation	"456"^^xsd:Integer;
+ 	dbpedia:Megawatt	"89.53532"^^xsd:Double.
+erdf:photovoltaique_i-250-500-kva	
+	a semanco:Solar_Energy ;
+ 	erdf:TrancheDePuissance	"i-]250,500] kVA";
+ 	erdf:NbInstallation	"8"^^xsd:Integer;
+ 	dbpedia:Megawatt	"3.0436"^^xsd:Double.
+erdf:photovoltaique_n-10-12-mw	
+	a semanco:Solar_Energy ;
+ 	erdf:TrancheDePuissance	"n-]10,12] MW";
+ 	erdf:NbInstallation	"31"^^xsd:Integer;
+ 	dbpedia:Megawatt	"341.70248"^^xsd:Double.
+erdf:photovoltaique_j-0.5-1-mw	
+	a semanco:Solar_Energy ;
+ 	erdf:TrancheDePuissance	"j-]0.5,1] MW";
+ 	erdf:NbInstallation	"30"^^xsd:Integer;
+ 	dbpedia:Megawatt	"24.25582"^^xsd:Double.
+erdf:bioenergie_e-0.5-1-mw	
+	a dbpedia:Bioénergie;
+  	erdf:TrancheDePuissance	"e-]0.5,1] MW";
+  	erdf:NbInstallation	"21"^^xsd:Integer;
+  	dbpedia:Megawatt	"14.1814"^^xsd:Double.
+erdf:bioenergie_f-1-15-mw	
+	a dbpedia:Bioénergie;
+  	erdf:TrancheDePuissance	"f-]1,15] MW";
+  	erdf:NbInstallation	"53"^^xsd:Integer;
+  	dbpedia:Megawatt	"133.11"^^xsd:Double.
+erdf:hydraulique_e-0.5-1-mw	
+	a semanco:Hydro_Energy;
+  	erdf:TrancheDePuissance	"e-]0.5,1] MW";
+  	erdf:NbInstallation	"10"^^xsd:Integer;
+  	dbpedia:Megawatt	"5.229"^^xsd:Double.
+erdf:autres_c-100-250-kva
+	a "Autres";
+  	erdf:TrancheDePuissance	"c-]100,250] kVA";
+  	erdf:NbInstallation	"17"^^xsd:Integer;
+  	dbpedia:Megawatt	"2.858"^^xsd:Double.
+erdf:eolienne_m-10-12-mw	
+	a semanco:Wind_Energy;
+  	erdf:TrancheDePuissance	"m-]10,12] MW";
+  	erdf:NbInstallation	"159"^^xsd:Integer;
+  	dbpedia:Megawatt	"1842.76"^^xsd:Double.
+erdf:eolienne_i-0.5-1-mw	
+	a semanco:Wind_Energy;
+  	erdf:TrancheDePuissance	"i-]0.5,1] MW";
+  	erdf:NbInstallation	"4"^^xsd:Integer;
+  	dbpedia:Megawatt	"3.59"^^xsd:Double.
+erdf:bioenergie_d-250-500-kva	
+	a dbpedia:Bioénergie;
+  	erdf:TrancheDePuissance	"d-]250,500] kVA";
+  	erdf:NbInstallation	"12"^^xsd:Integer;
+  	dbpedia:Megawatt	"4.176"^^xsd:Double.
+erdf:eolienne_l-5-10-mw	
+	a semanco:Wind_Energy;
+  	erdf:TrancheDePuissance	"l-]5,10] MW";
+  	erdf:NbInstallation	"218"^^xsd:Integer;
+  	dbpedia:Megawatt	"1910.841"^^xsd:Double.
+erdf:eolienne_a-0-3-kva	
+	a semanco:Wind_Energy;
+  	erdf:TrancheDePuissance	"a-]0,3] kVA";
+  	erdf:NbInstallation	"4"^^xsd:Integer;
+  	dbpedia:Megawatt	"0.008"^^xsd:Double.
+erdf:eolienne_	k-3-5-mw
+	a semanco:Wind_Energy;
+  	erdf:TrancheDePuissance	"k-]3,5] MW";
+  	erdf:NbInstallation	"28"^^xsd:Integer;
+  	dbpedia:Megawatt	"109.5"^^xsd:Double.
+erdf:photovoltaique_c-3-6-kva
+	a semanco:Solar_Energy ;
+  	erdf:TrancheDePuissance	"c-]3,6] kVA";
+  	erdf:NbInstallation	"3287"^^xsd:Integer;
+  	dbpedia:Megawatt	"16.5069"^^xsd:Double.
+erdf:photovoltaique_k-1-3-mw	
+	a semanco:Solar_Energy ;
+  	erdf:TrancheDePuissance	"k-]1,3] MW";
+  	erdf:NbInstallation	"72"^^xsd:Integer;
+  	dbpedia:Megawatt	"138.61918"^^xsd:Double.
+erdf:hydraulique_d-250-500-kva	
+	a semanco:Hydro_Energy;
+  	erdf:TrancheDePuissance	"d-]250,500] kVA";
+  	erdf:NbInstallation	"27"^^xsd:Integer;
+  	dbpedia:Megawatt	"6.394"^^xsd:Double.
+erdf:hydraulique_b-36-100-kva	
+	a semanco:Hydro_Energy;
+  	erdf:TrancheDePuissance	"b-]36,100] kVA";
+  	erdf:NbInstallation	"43"^^xsd:Integer;
+  	dbpedia:Megawatt	"3.13212"^^xsd:Double.
+erdf:eolienne_n-12-17-mw	
+	a semanco:Wind_Energy;
+  	erdf:TrancheDePuissance	"n-]12,17] MW";
+  	erdf:NbInstallation	"90"^^xsd:Integer;
+  	dbpedia:Megawatt	"1251.618"^^xsd:Double.
+erdf:photovoltaique_l-3-5-mw	
+	a semanco:Solar_Energy ;
+  	erdf:TrancheDePuissance	"l-]3,5] MW";
+  	erdf:NbInstallation	"49"^^xsd:Integer;
+  	dbpedia:Megawatt	"200.83655"^^xsd:Double.
+erdf:photovoltaique_a-0-1-kva	
+	a semanco:Solar_Energy ;
+  	erdf:TrancheDePuissance	"a-]0,1] kVA";
+  	erdf:NbInstallation	"9"^^xsd:Integer;
+  	dbpedia:Megawatt	"0.0087"^^xsd:Double.
+erdf:hydraulique_a-0-36-kva	
+	a semanco:Hydro_Energy;
+  	erdf:TrancheDePuissance	"a-]0,36] kVA";
+  	erdf:NbInstallation	"29"^^xsd:Integer;
+  	dbpedia:Megawatt	"0.6846"^^xsd:Double.
+erdf:eolienne_f-36-100-kva	
+	a semanco:Wind_Energy;
+  	erdf:TrancheDePuissance	"f-]36,100] kVA";
+  	erdf:NbInstallation	"3"^^xsd:Integer;
+  	dbpedia:Megawatt	"6.168"^^xsd:Double.
+erdf:eolienne_b-3-6-kva	
+	a semanco:Wind_Energy;
+  	erdf:TrancheDePuissance	"b-]3,6] kVA";
+  	erdf:NbInstallation	"11"^^xsd:Integer;
+  	dbpedia:Megawatt	"0.0606"^^xsd:Double.
+erdf:eolienne_j-1-3-mw	
+	a semanco:Wind_Energy;
+  	erdf:TrancheDePuissance	"j-]1,3] MW";
+  	erdf:NbInstallation	"19"^^xsd:Integer;
+  	dbpedia:Megawatt	"42.368"^^xsd:Double.
+erdf:photovoltaique_f-18-36-kva	
+	a semanco:Solar_Energy ;
+  	erdf:TrancheDePuissance	"f-]18,36] kVA";
+  	erdf:NbInstallation	"357"^^xsd:Integer;
+  	dbpedia:Megawatt	"11.0257"^^xsd:Double.
+erdf:photovoltaique_g-36-100-kva	
+	a semanco:Solar_Energy ;
+  	erdf:TrancheDePuissance	"g-]36,100] kVA";
+  	erdf:NbInstallation	"1847"^^xsd:Integer;
+  	dbpedia:Megawatt	"164.351"^^xsd:Double.
+erdf:photovoltaique_m-5-10-mw	
+	a semanco:Solar_Energy ;
+  	erdf:TrancheDePuissance	"m-]5,10] MW";
+  	erdf:NbInstallation	"53"^^xsd:Integer;
+  	dbpedia:Megawatt	"401.642"^^xsd:Double.
+erdf:hydraulique_c-100-250-kva	
+	a semanco:Hydro_Energy;
+  	erdf:TrancheDePuissance	"c-]100,250] kVA";
+  	erdf:NbInstallation	"41"^^xsd:Integer;
+  	dbpedia:Megawatt	"4.9683"^^xsd:Double.
+erdf:hydraulique_f-1-15-mw	
+	a semanco:Hydro_Energy;
+  	erdf:TrancheDePuissance	"f-]1,15] MW";
+  	erdf:NbInstallation	"35"^^xsd:Integer;
+  	dbpedia:Megawatt	"75.481"^^xsd:Double.
+erdf:eolienne_h-250-500-kva
+	a semanco:Wind_Energy;
+  	erdf:TrancheDePuissance	"h-]250,500] kVA";
+  	erdf:NbInstallation	"3"^^xsd:Integer;
+  	dbpedia:Megawatt	"0.92"^^xsd:Double.
+erdf:bioenergie_c-100-250-kva
+	a dbpedia:Bioénergie;
+  	erdf:TrancheDePuissance	"c-]100,250] kVA";
+  	erdf:NbInstallation	"55"^^xsd:Integer;
+  	dbpedia:Megawatt	"11.2609"^^xsd:Double.
+erdf:bioenergie_b-36-100-kva	
+	a dbpedia:Bioénergie;
+  	erdf:TrancheDePuissance	"b-]36,100] kVA";
+  	erdf:NbInstallation	"13"^^xsd:Integer;
+  	dbpedia:Megawatt	"0.8047"^^xsd:Double.
+erdf:autres_d-250-500-kva	
+	a "Autres";
+  	erdf:TrancheDePuissance	"d-]250,500] kVA";
+  	erdf:NbInstallation	"3"^^xsd:Integer;
+  	dbpedia:Megawatt	"0.65"^^xsd:Double.
+
