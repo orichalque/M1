@@ -18,7 +18,7 @@ public class TakenAirwayImplTest {
 	TakenAirwayImpl taimpl;
 	VORImpl start = new VORImpl("name1", new PositionImpl(new LatitudeImpl(60, 25, 52, CompassDirection.SOUTH), new LongitudeImpl(60, 25, 52, CompassDirection.WEST))); ;
 	VORImpl end = new VORImpl("name2", new PositionImpl(new LatitudeImpl(60, 25, 52, CompassDirection.NORTH), new LongitudeImpl(60, 25, 52, CompassDirection.EAST)));
-	AirwayImpl awi =  new AirwayImpl(end, start);;
+	AirwayImpl awi =  new AirwayImpl(end, start);
 	
 	@Before
 	public void setUp() throws Exception {

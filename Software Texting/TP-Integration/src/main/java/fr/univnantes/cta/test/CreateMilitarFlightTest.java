@@ -16,6 +16,7 @@ import fr.univnantes.cta.impl.AirplaneImpl;
 import fr.univnantes.cta.impl.AirportImpl;
 import fr.univnantes.cta.impl.AirwayImpl;
 import fr.univnantes.cta.impl.CreateCivilFlight;
+import fr.univnantes.cta.impl.CreateMilitarFlight;
 import fr.univnantes.cta.impl.FlightPlanImpl;
 import fr.univnantes.cta.impl.LatitudeImpl;
 import fr.univnantes.cta.impl.LongitudeImpl;
@@ -23,8 +24,8 @@ import fr.univnantes.cta.impl.PositionImpl;
 import fr.univnantes.cta.impl.TakenAirwayImpl;
 import fr.univnantes.cta.impl.VORImpl;
 
-public class CreateCivilFlightTest {
-	CreateCivilFlight ccf;
+public class CreateMilitarFlightTest {
+	CreateMilitarFlight cmf;
 	Airport d;
 	Airport a;
 	Airplane p;
@@ -48,36 +49,38 @@ public class CreateCivilFlightTest {
 
 	@After
 	public void tearDown() throws Exception {
-		ccf = null;
-		assertNull(ccf);
+		cmf = null;
+		assertNull(cmf);
 	}
 
 	@Test(expected=AirplaneOverload.class)
 	public void testConstru1() throws IncompatibleAirway, AirplaneOverload {
-		ccf = new CreateCivilFlight(d, a, p, fp, 40); //overload
+		cmf = new CreateMilitarFlight(d, a, p, fp, 40); //overload
 	}
 	
 	@Test(expected=UnsupportedOperationException.class)
 	public void testConstru2() throws IncompatibleAirway, AirplaneOverload, UnsupportedOperationException {
 		ta1 = new TakenAirwayImpl(awi, 0, CompassDirection.NORTH);
 		fp.addAirway(ta1);
-		ccf = new CreateCivilFlight(d, a, p2, fp, 40); 
+		cmf = new CreateMilitarFlight(d, a, p2, fp, 40); 
 	}
 	
 	@Test
 	public void testNormalConstructor() throws IncompatibleAirway, AirplaneOverload{
-		ccf = new CreateCivilFlight(d, a, p2, fp, 40);
+		cmf = new CreateMilitarFlight(d, a, p2, fp, 40);
 	}
 	
 	@Test
 	public void testLoadingWeight() throws IncompatibleAirway, AirplaneOverload{
-		ccf = new CreateCivilFlight(d, a, p2, fp, 40);
-		assertEquals("LoadingOverload?", (40*(70+60)),ccf.loadingWeight(), 0);
+		cmf = new CreateMilitarFlight(d, a, p2, fp, 40);
+		assertEquals("LoadingOverload?", (40*(70+100)),cmf.loadingWeight(), 0);
+		
 	}
 	
 	@Test
 	public void testTotalWeight() throws IncompatibleAirway, AirplaneOverload{
-		ccf = new CreateCivilFlight(d, a, p2, fp, 40);
-		assertEquals("AirPlane Weight?", (550.+ 40*(70+60)),ccf.totalWeight(), 0);
+		cmf = new CreateMilitarFlight(d, a, p2, fp, 40);
+		assertEquals("AirPlane Weight?", (550.+ 40*(70+100)),cmf.totalWeight(), 0);
 	}
+
 }
