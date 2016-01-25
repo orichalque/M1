@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>input.txt</file>
+        <file>input2.txt</file>
+        <file>open.txt</file>
+    </qresource>
+</RCC>
