@@ -36,6 +36,7 @@
       </toolsSet>
       <compileType>
         <ccTool>
+          <developmentMode>5</developmentMode>
           <commandLine>-std=c++11 -I/comptes/goualard-f/local/tbb/include -L/comptes/goualard-f/local/tbb/lib/intel64/cc4.1.0_libc2.4_kernel2.6.16.21 -ltbb</commandLine>
         </ccTool>
       </compileType>

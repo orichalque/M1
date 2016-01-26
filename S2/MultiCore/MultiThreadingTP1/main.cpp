@@ -11,9 +11,50 @@
 #include <fstream>
 #include <vector>
 #include <chrono>
+#include <tbb/parallel_for.h>
 #include <tbb/blocked_range.h>
-
+using namespace tbb;
 using namespace std;
+
+typedef blocked_range<int> range;
+bool compareWord(string word, string compareTo);
+
+class matcher {
+private:
+    vector<string> words;
+    string word;
+public:
+    matcher(vector<string> ws, string w) : words(ws), word(w) {}
+    void operator()(const range& r) const{
+        for (int i = r.begin(); i != r.end(); ++i) {
+            if (compareWord(word, words[i])) {
+                cout << words[i] << endl;
+            }
+        }
+    }
+    
+    
+};
+
+/**
+ * @compare two words with dots in it
+ * @param word
+ * @param compareTo
+ * @return 
+ */
+bool compareWord(string word, string compareTo) {
+    //ABCD - A.C.
+    if (word.length() != compareTo.length()){
+        return false;
+    } else {
+        for (int i = 0; i < compareTo.length(); ++i){
+            if (word.at(i) != compareTo.at(i) && word.at(i) != '.') {
+                return false;
+            }
+        }
+        return true;
+    }
+}
 
 /**
  * @brief find word in dict
@@ -48,25 +89,6 @@ bool find(vector<string> words, vector<string> dict){
     return (remain == 0) ? true : false;
 }
 
-/**
- * @compare two words with dots in it
- * @param word
- * @param compareTo
- * @return 
- */
-bool compareWord(string word, string compareTo) {
-    //ABCD - A.C.
-    if (word.length() != compareTo.length()){
-        return false;
-    } else {
-        for (int i = 0; i < compareTo.length(); ++i){
-            if (word.at(i) != compareTo.at(i) && word.at(i) != '.') {
-                return false;
-            }
-        }
-        return true;
-    }
-}
 /**
  * @brief find an incomlpete word in the dictionnary, s..d.f for sandef for example
  * @param word
@@ -106,11 +128,13 @@ int main(int argc, char** argv) {
     auto begin = std::chrono::high_resolution_clock::now();
     
     if (argc > 1) {
-        cout << argv[1] << " est-il présent? " << endl;
+        //cout << argv[1] << " est-il présent? " << endl;
         findWordIncomplete(argv[1], dictionnary);
     } else {
         cout << "Entrez un argument" << endl;
     }
+    
+    parallel_for(range(0, dictionnary.size(), 100), matcher(dictionnary, argv[1]));
     
     auto end = std::chrono::high_resolution_clock::now();
     std::cout << std::chrono::duration_cast<std::chrono::milliseconds>(end-begin).count() << "ms" << std::endl;
